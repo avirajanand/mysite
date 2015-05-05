@@ -1,0 +1,1 @@
+<span class="btn btn-block btn-fb"><?php fbc_button(); ?></span>

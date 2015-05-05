@@ -1,0 +1,1015 @@
+# English translations for paris - themes package.
+# Copyright (C) 2014 THE paris - themes COPYRIGHT HOLDER
+# This file is distributed under the same license as the paris - themes package.
+# Automatically generated, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: spain - themes 3.0.0\n"
+"Report-Msgid-Bugs-To: info@osclass.org\n"
+"POT-Creation-Date: 2014-11-05 10:34+0100\n"
+"PO-Revision-Date: 2014-11-05 10:34+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: tmp/paris/./header1.php:101
+msgid "Register"
+msgstr "Sign Up"
+
+#: tmp/spain/./404.php:34
+msgid "Page not found"
+msgstr "Page not found"
+
+#: tmp/spain/./admin/header.php:5 tmp/spain/./inc.functions.php:17
+#: tmp/spain/./inc.functions.php:25
+msgid "Header logo"
+msgstr "Header logo"
+
+#: tmp/spain/./admin/header.php:8
+msgid "Preview"
+msgstr "Preview"
+
+#: tmp/spain/./admin/header.php:15
+msgid "Remove logo"
+msgstr "Remove logo"
+
+#: tmp/spain/./admin/header.php:23
+msgid "No logo has been uploaded yet"
+msgstr "No logo has been uploaded yet"
+
+#: tmp/spain/./admin/header.php:26
+msgid "Upload logo"
+msgstr "Upload logo"
+
+#: tmp/spain/./admin/header.php:28
+msgid "The preferred size of the logo is 600x100."
+msgstr "The preferred size of the logo is 600x100."
+
+#: tmp/spain/./admin/header.php:30
+msgid ""
+"<strong>Note:</strong> Uploading another logo will overwrite the current "
+"logo."
+msgstr ""
+"<strong>Note:</strong> Uploading another logo will overwrite the current "
+"logo."
+
+#: tmp/spain/./admin/header.php:38
+msgid "Logo image (png,gif,jpg)"
+msgstr "Logo image (png,gif,jpg)"
+
+#: tmp/spain/./admin/header.php:44
+msgid "Upload"
+msgstr "Upload"
+
+#: tmp/spain/./admin/header.php:53
+#, php-format
+msgid "The images folder <strong>%s</strong> is not writable on your server"
+msgstr "The images folder <strong>%s</strong> is not writable on your server"
+
+#: tmp/spain/./admin/header.php:54
+msgid "OSClass can't upload the logo image from the administration panel."
+msgstr "OSClass can't upload the logo image from the administration panel."
+
+#: tmp/spain/./admin/header.php:55
+msgid "Please make the aforementioned image folder writable."
+msgstr "Please make the aforementioned image folder writable."
+
+#: tmp/spain/./admin/header.php:60
+msgid ""
+"To make a directory writable under UNIX execute this command from the shell:"
+msgstr ""
+"To make a directory writable under UNIX execute this command from the shell:"
+
+#: tmp/spain/./admin/map_settings.php:2
+msgid "Map Options"
+msgstr "Map Options"
+
+#: tmp/spain/./admin/map_settings.php:3
+msgid "How to assign a region to your map?"
+msgstr "How to assign a region to your map?"
+
+#: tmp/spain/./admin/map_settings.php:3
+msgid ""
+"First, click in the map to select the area you want to set. Then, a dialog "
+"will appear and you only need to select the region you want to assign. "
+"Finally, once you have selected the region, click the save button."
+msgstr ""
+"First, click in the map to select the area you want to set. Then, a dialog "
+"will appear and you only need to select the region you want to assign. "
+"Finally, once you have selected the region, click the save button."
+
+#: tmp/spain/./admin/map_settings.php:11 tmp/spain/./admin/map_settings.php:28
+#: tmp/spain/./admin/map_settings.php:52 tmp/spain/./admin/map_settings.php:75
+msgid "Select a region"
+msgstr "Select a region"
+
+#: tmp/spain/./admin/map_settings.php:32
+msgid "Select a region first"
+msgstr "Select a region first"
+
+#: tmp/spain/./admin/map_settings.php:36 tmp/spain/./admin/map_settings.php:57
+#: tmp/spain/./admin/settings.php:92
+msgid "Save changes"
+msgstr "Save changes"
+
+#: tmp/spain/./admin/settings.php:12
+msgid ""
+"I would like to contribute to the development of OSClass with a donation of"
+msgstr ""
+"I would like to contribute to the development of OSClass with a donation of"
+
+#: tmp/spain/./admin/settings.php:17
+msgid "Custom"
+msgstr "Custom"
+
+#: tmp/spain/./admin/settings.php:18
+msgid "Donate"
+msgstr "Donate"
+
+#: tmp/spain/./admin/settings.php:22 tmp/spain/./inc.functions.php:18
+#: tmp/spain/./inc.functions.php:26
+msgid "Theme settings"
+msgstr "Theme settings"
+
+#: tmp/spain/./admin/settings.php:28
+msgid "Search placeholder"
+msgstr "Search placeholder"
+
+#: tmp/spain/./admin/settings.php:32
+msgid "Footer link"
+msgstr "Footer link"
+
+#: tmp/spain/./admin/settings.php:34
+msgid ""
+"I want to help OSClass by linking to <a href=\"http://osclass.org/\" target="
+"\"_blank\">osclass.org</a> from my site with the following text:"
+msgstr ""
+"I want to help OSClass by linking to <a href=\"http://osclass.org/\" target="
+"\"_blank\">osclass.org</a> from my site with the following text:"
+
+#: tmp/spain/./admin/settings.php:35
+msgid ""
+"This website is proudly using the <a title=\"OSClass web\" href=\"http://"
+"osclass.org/\">classifieds scripts</a> software <strong>OSClass</strong>"
+msgstr ""
+"This website is proudly using the <a title=\"OSClass web\" href=\"http://"
+"osclass.org/\">classifieds scripts</a> software <strong>OSClass</strong>"
+
+#: tmp/spain/./admin/settings.php:42
+msgid "Ads management"
+msgstr "Ads management"
+
+#: tmp/spain/./admin/settings.php:46
+msgid ""
+"In this section you can configure your site to display ads and start "
+"generating revenue."
+msgstr ""
+"In this section you can configure your site to display ads and start "
+"generating revenue."
+
+#: tmp/spain/./admin/settings.php:46
+msgid ""
+"If you are using an online advertising platform, such as Google Adsense, "
+"copy and paste here the provided code for ads."
+msgstr ""
+"If you are using an online advertising platform, such as Google Adsense, "
+"copy and paste here the provided code for ads."
+
+#: tmp/spain/./admin/settings.php:52
+msgid "Header 728x90"
+msgstr "Header 728x90"
+
+#: tmp/spain/./admin/settings.php:56
+msgid ""
+"This ad will be shown at the top of your website, next to the site title and "
+"above the search results. Note that the size of the ad has to be 728x90 "
+"pixels."
+msgstr ""
+"This ad will be shown at the top of your website, next to the site title and "
+"above the search results. Note that the size of the ad has to be 728x90 "
+"pixels."
+
+#: tmp/spain/./admin/settings.php:60
+msgid "Homepage 728x90"
+msgstr "Homepage 728x90"
+
+#: tmp/spain/./admin/settings.php:64
+msgid ""
+"This ad will be shown on the main site of your website. It will appear both "
+"at the top and bottom of your site homepage. Note that the size of the ad "
+"has to be 728x90 pixels."
+msgstr ""
+"This ad will be shown on the main site of your website. It will appear both "
+"at the top and bottom of your site homepage. Note that the size of the ad "
+"has to be 728x90 pixels."
+
+#: tmp/spain/./admin/settings.php:68
+msgid "Search results 728x90 (top of the page)"
+msgstr "Search results 728x90 (top of the page)"
+
+#: tmp/spain/./admin/settings.php:72
+msgid ""
+"This ad will be shown on top of the search results of your site. Note that "
+"the size of the ad has to be 728x90 pixels."
+msgstr ""
+"This ad will be shown on top of the search results of your site. Note that "
+"the size of the ad has to be 728x90 pixels."
+
+#: tmp/spain/./admin/settings.php:76
+msgid "Search results 728x90 (middle of the page)"
+msgstr "Search results 728x90 (middle of the page)"
+
+#: tmp/spain/./admin/settings.php:80
+msgid ""
+"This ad will be shown among the search results of your site. Note that the "
+"size of the ad has to be 728x90 pixels."
+msgstr ""
+"This ad will be shown among the search results of your site. Note that the "
+"size of the ad has to be 728x90 pixels."
+
+#: tmp/spain/./admin/settings.php:84
+msgid "Sidebar 300x250"
+msgstr "Sidebar 300x250"
+
+#: tmp/spain/./admin/settings.php:88
+msgid ""
+"This ad will be shown at the right sidebar of your website, on the product "
+"detail page. Note that the size of the ad has to be 300x350 pixels."
+msgstr ""
+"This ad will be shown at the right sidebar of your website, on the product "
+"detail page. Note that the size of the ad has to be 300x350 pixels."
+
+#: tmp/spain/./alert-form.php:6
+msgid "You have sucessfully subscribed to the alert"
+msgstr "You have sucessfully subscribed to the alert"
+
+#: tmp/spain/./alert-form.php:7 tmp/spain/./user-change_email.php:42
+msgid "Invalid email address"
+msgstr "Invalid email address"
+
+#: tmp/spain/./alert-form.php:8
+msgid "There was a problem with the alert"
+msgstr "There was a problem with the alert"
+
+#: tmp/spain/./alert-form.php:39
+msgid "Subscribe to this search"
+msgstr "Subscribe to this search"
+
+#: tmp/spain/./alert-form.php:55
+msgid "Subscribe now"
+msgstr "Subscribe now"
+
+#: tmp/spain/./contact.php:35 tmp/spain/./template-contact.php:37
+msgid "Contact us"
+msgstr "Contact us"
+
+#: tmp/spain/./contact.php:41 tmp/spain/./template-contact.php:43
+msgid "Subject"
+msgstr "Subject"
+
+#: tmp/spain/./contact.php:41 tmp/spain/./contact.php:43
+#: tmp/spain/./item-contact.php:52 tmp/spain/./item.php:235
+#: tmp/spain/./template-contact.php:43 tmp/spain/./template-contact.php:45
+#: tmp/spain/./user-public-profile.php:124
+msgid "optional"
+msgstr "optional"
+
+#: tmp/spain/./contact.php:42 tmp/spain/./item-contact.php:53
+#: tmp/spain/./item-send-friend.php:52 tmp/spain/./item.php:240
+#: tmp/spain/./template-contact.php:44 tmp/spain/./user-public-profile.php:125
+msgid "Message"
+msgstr "Message"
+
+#: tmp/spain/./contact.php:43 tmp/spain/./item-contact.php:49
+#: tmp/spain/./item-send-friend.php:47 tmp/spain/./item.php:163
+#: tmp/spain/./item.php:233 tmp/spain/./template-contact.php:45
+#: tmp/spain/./user-public-profile.php:122
+msgid "Your name"
+msgstr "Your name"
+
+#: tmp/spain/./contact.php:44 tmp/spain/./item-contact.php:50
+#: tmp/spain/./item-send-friend.php:48 tmp/spain/./item.php:234
+#: tmp/spain/./template-contact.php:46 tmp/spain/./user-public-profile.php:123
+msgid "Your e-mail address"
+msgstr "Your e-mail address"
+
+#: tmp/spain/./contact.php:47 tmp/spain/./item-send-friend.php:55
+#: tmp/spain/./item.php:168 tmp/spain/./item.php:260
+#: tmp/spain/./template-contact.php:48 tmp/spain/./user-public-profile.php:142
+msgid "Send"
+msgstr "Send"
+
+#: tmp/spain/./footer.php:28
+msgid "Contact"
+msgstr "Contact"
+
+#: tmp/spain/./footer.php:35
+msgid ""
+"This website is proudly using the <a title=\"Osclass web\" href=\"http://"
+"osclass.org/\">classifieds scripts</a> software <strong>Osclass</strong>"
+msgstr ""
+"This website is proudly using the <a title=\"Osclass web\" href=\"http://"
+"osclass.org/\">classifieds scripts</a> software <strong>Osclass</strong>"
+
+#: tmp/spain/./footer.php:48
+msgid "Your search must be at least three characters long"
+msgstr "Your search must be at least three characters long"
+
+#: tmp/spain/./functions.php:61
+msgid "Theme settings updated correctly"
+msgstr "Theme settings updated correctly"
+
+#: tmp/spain/./functions.php:68
+msgid "The logo image has been uploaded correctly"
+msgstr "The logo image has been uploaded correctly"
+
+#: tmp/spain/./functions.php:70 tmp/spain/./functions.php:73
+msgid "An error has occurred, please try again"
+msgstr "An error has occurred, please try again"
+
+#: tmp/spain/./functions.php:80
+msgid "The logo image has been removed"
+msgstr "The logo image has been removed"
+
+#: tmp/spain/./functions.php:82
+msgid "Image not found"
+msgstr "Image not found"
+
+#: tmp/spain/./functions.php:105
+msgid "ie. PHP Programmer"
+msgstr "ie. PHP Programmer"
+
+#: tmp/spain/./head.php:41
+msgid "No file selected"
+msgstr "No file selected"
+
+#: tmp/spain/./head.php:42
+msgid "Choose File"
+msgstr "Choose File"
+
+#: tmp/spain/./header.php:39
+#, php-format
+msgid "Hi %s"
+msgstr "Hi %s"
+
+#: tmp/spain/./header.php:40
+msgid "My account"
+msgstr "My account"
+
+#: tmp/spain/./header.php:41
+msgid "Logout"
+msgstr "Logout"
+
+#: tmp/spain/./header.php:45 tmp/spain/./item.php:213
+msgid "Login"
+msgstr "Login"
+
+#: tmp/spain/./header.php:48 tmp/spain/./item.php:214
+#: tmp/spain/./user-login.php:43
+msgid "Register for a free account"
+msgstr "Register for a free account"
+
+#: tmp/spain/./header.php:54 tmp/spain/./item-post.php:187
+#: tmp/spain/./item.php:223 tmp/spain/./user-login.php:38
+#: tmp/spain/./user-profile.php:83 tmp/spain/./user-recover.php:38
+#: tmp/spain/./user-register.php:49
+msgid "E-mail"
+msgstr "E-mail"
+
+#: tmp/spain/./header.php:56 tmp/spain/./user-login.php:39
+#: tmp/spain/./user-register.php:44
+msgid "Password"
+msgstr "Password"
+
+#: tmp/spain/./header.php:58 tmp/spain/./user-login.php:40
+msgid "Remember me"
+msgstr "Remember me"
+
+#: tmp/spain/./header.php:59 tmp/spain/./user-login.php:41
+msgid "Log in"
+msgstr "Log in"
+
+#: tmp/spain/./header.php:61 tmp/spain/./user-login.php:43
+msgid "Forgot password?"
+msgstr "Forgot password?"
+
+#: tmp/spain/./header.php:71
+msgid "Language"
+msgstr "Language"
+
+#: tmp/spain/./header.php:84
+msgid "Publish your ad for free"
+msgstr "Publish your ad for free"
+
+#: tmp/spain/./inc.functions.php:19 tmp/spain/./inc.functions.php:27
+msgid "Map settings"
+msgstr "Map settings"
+
+#: tmp/spain/./inc.functions.php:23
+msgid "Brasil theme"
+msgstr "Brasil theme"
+
+#: tmp/spain/./inc.functions.php:41
+msgid "Region saved correctly"
+msgstr "Region saved correctly"
+
+#: tmp/spain/./inc.functions.php:94
+#, php-format
+msgid ""
+"Wait! There are unassigned map areas in the map. <a href=\"%s\">Click here</"
+"a> to assign regions to the map."
+msgstr ""
+"Wait! There are unassigned map areas in the map. <a href=\"%s\">Click here</"
+"a> to assign regions to the map."
+
+#: tmp/spain/./inc.search.php:54 tmp/spain/./item-edit.php:122
+#: tmp/spain/./item-post.php:120
+msgid "Select a category"
+msgstr "Select a category"
+
+#: tmp/spain/./inc.search.php:56
+msgid "Search"
+msgstr "Search"
+
+#: tmp/spain/./item-contact.php:35 tmp/spain/./item.php:111
+msgid "Contact seller"
+msgstr "Contact seller"
+
+#: tmp/spain/./item-contact.php:43
+msgid "To (seller)"
+msgstr "To (seller)"
+
+#: tmp/spain/./item-contact.php:44 tmp/spain/./item-send-friend.php:42
+msgid "Listing"
+msgstr "Listing"
+
+#: tmp/spain/./item-contact.php:52 tmp/spain/./item.php:235
+#: tmp/spain/./user-public-profile.php:124
+msgid "Phone number"
+msgstr "Phone number"
+
+#: tmp/spain/./item-contact.php:55
+msgid "Send message"
+msgstr "Send message"
+
+#: tmp/spain/./item-edit.php:110
+msgid "Update your listing"
+msgstr "Update your listing"
+
+#: tmp/spain/./item-edit.php:119 tmp/spain/./item-post.php:117
+msgid "General Information"
+msgstr "General Information"
+
+#: tmp/spain/./item-edit.php:121 tmp/spain/./item-post.php:119
+#: tmp/spain/./search.php:279
+msgid "Category"
+msgstr "Category"
+
+#: tmp/spain/./item-edit.php:129 tmp/spain/./item-post.php:128
+#: tmp/spain/./search.php:269 tmp/spain/./user-alerts.php:50
+#: tmp/spain/./user-dashboard.php:50 tmp/spain/./user-items.php:53
+msgid "Price"
+msgstr "Price"
+
+#: tmp/spain/./item-edit.php:144 tmp/spain/./item-post.php:142
+msgid "Photos"
+msgstr "Photos"
+
+#: tmp/spain/./item-edit.php:153 tmp/spain/./item-post.php:148
+msgid "Add new photo"
+msgstr "Add new photo"
+
+#: tmp/spain/./item-edit.php:160 tmp/spain/./main.php:102
+#: tmp/spain/./search.php:247 tmp/spain/./user-public-profile.php:69
+msgid "Location"
+msgstr "Location"
+
+#: tmp/spain/./item-edit.php:162 tmp/spain/./item-post.php:158
+#: tmp/spain/./item.php:84 tmp/spain/./user-profile.php:102
+msgid "Country"
+msgstr "Country"
+
+#: tmp/spain/./item-edit.php:166 tmp/spain/./item-post.php:162
+#: tmp/spain/./item.php:85 tmp/spain/./user-profile.php:106
+msgid "Region"
+msgstr "Region"
+
+#: tmp/spain/./item-edit.php:170 tmp/spain/./item-post.php:166
+#: tmp/spain/./item.php:86 tmp/spain/./search.php:249
+#: tmp/spain/./user-profile.php:110
+msgid "City"
+msgstr "City"
+
+#: tmp/spain/./item-edit.php:174 tmp/spain/./item.php:87
+#: tmp/spain/./user-profile.php:114
+msgid "City area"
+msgstr "City area"
+
+#: tmp/spain/./item-edit.php:178 tmp/spain/./item-post.php:174
+#: tmp/spain/./item.php:88 tmp/spain/./user-profile.php:118
+#: tmp/spain/./user-public-profile.php:68
+msgid "Address"
+msgstr "Address"
+
+#: tmp/spain/./item-edit.php:190 tmp/spain/./user-change_email.php:83
+#: tmp/spain/./user-change_password.php:57
+#: tmp/spain/./user-change_username.php:104 tmp/spain/./user-profile.php:129
+msgid "Update"
+msgstr "Update"
+
+#: tmp/spain/./item-edit.php:191 tmp/spain/./user-profile.php:58
+msgid "Cancel"
+msgstr "Cancel"
+
+#: tmp/spain/./item-post.php:110
+msgid "Publish a listing"
+msgstr "Publish a listing"
+
+#: tmp/spain/./item-post.php:156
+msgid "Listing Location"
+msgstr "Listing Location"
+
+#: tmp/spain/./item-post.php:170
+msgid "City Area"
+msgstr "City Area"
+
+#: tmp/spain/./item-post.php:181
+msgid "Seller's information"
+msgstr "Seller's information"
+
+#: tmp/spain/./item-post.php:183 tmp/spain/./item.php:218
+#: tmp/spain/./item.php:220 tmp/spain/./user-profile.php:70
+#: tmp/spain/./user-register.php:43
+msgid "Name"
+msgstr "Name"
+
+#: tmp/spain/./item-post.php:194
+msgid "Show e-mail on the listing page"
+msgstr "Show e-mail on the listing page"
+
+#: tmp/spain/./item-post.php:207
+msgid "Publish"
+msgstr "Publish"
+
+#: tmp/spain/./item-send-friend.php:35
+msgid "Send to a friend"
+msgstr "Send to a friend"
+
+#: tmp/spain/./item-send-friend.php:50
+msgid "Your friend's name"
+msgstr "Your friend's name"
+
+#: tmp/spain/./item-send-friend.php:51
+msgid "Your friend's e-mail address"
+msgstr "Your friend's e-mail address"
+
+#: tmp/spain/./item.php:60
+msgid "Edit item"
+msgstr "Edit item"
+
+#: tmp/spain/./item.php:65
+msgid "Mark as"
+msgstr "Mark as"
+
+#: tmp/spain/./item.php:67
+msgid "spam"
+msgstr "spam"
+
+#: tmp/spain/./item.php:68
+msgid "misclassified"
+msgstr "misclassified"
+
+#: tmp/spain/./item.php:69
+msgid "duplicated"
+msgstr "duplicated"
+
+#: tmp/spain/./item.php:70
+msgid "expired"
+msgstr "expired"
+
+#: tmp/spain/./item.php:71
+msgid "offensive"
+msgstr "offensive"
+
+#: tmp/spain/./item.php:80
+msgid "Published date"
+msgstr "Published date"
+
+#: tmp/spain/./item.php:81
+msgid "Modified date"
+msgstr "Modified date"
+
+#: tmp/spain/./item.php:115
+msgid "Share"
+msgstr "Share"
+
+#: tmp/spain/./item.php:121
+msgid "Useful information"
+msgstr "Useful information"
+
+#: tmp/spain/./item.php:123
+msgid "Avoid scams by acting locally or paying with PayPal"
+msgstr "Avoid scams by acting locally or paying with PayPal"
+
+#: tmp/spain/./item.php:124
+msgid ""
+"Never pay with Western Union, Moneygram or other anonymous payment services"
+msgstr ""
+"Never pay with Western Union, Moneygram or other anonymous payment services"
+
+#: tmp/spain/./item.php:125
+msgid ""
+"Don't buy or sell outside of your country. Don't accept cashier cheques from "
+"outside your country"
+msgstr ""
+"Don't buy or sell outside of your country. Don't accept cashier cheques from "
+"outside your country"
+
+#: tmp/spain/./item.php:126
+msgid ""
+"This site is never involved in any transaction, and does not handle "
+"payments, shipping, guarantee transactions, provide escrow services, or "
+"offer \"buyer protection\" or \"seller certification\""
+msgstr ""
+"This site is never involved in any transaction, and does not handle "
+"payments, shipping, guarantee transactions, provide escrow services, or "
+"offer \"buyer protection\" or \"seller certification\""
+
+#: tmp/spain/./item.php:132
+msgid "Comments"
+msgstr "Comments"
+
+#: tmp/spain/./item.php:139
+msgid "by"
+msgstr "by"
+
+#: tmp/spain/./item.php:143
+msgid "Delete your comment"
+msgstr "Delete your comment"
+
+#: tmp/spain/./item.php:143 tmp/spain/./user-items.php:58
+#: tmp/spain/./user-profile.php:55
+msgid "Delete"
+msgstr "Delete"
+
+#: tmp/spain/./item.php:155
+msgid "Leave your comment (spam and offensive messages will be removed)"
+msgstr "Leave your comment (spam and offensive messages will be removed)"
+
+#: tmp/spain/./item.php:164
+msgid "Your e-mail"
+msgstr "Your e-mail"
+
+#: tmp/spain/./item.php:166
+msgid "Title"
+msgstr "Title"
+
+#: tmp/spain/./item.php:167
+msgid "Comment"
+msgstr "Comment"
+
+#: tmp/spain/./item.php:180
+msgid "Image"
+msgstr "Image"
+
+#: tmp/spain/./item.php:199 tmp/spain/./user-public-profile.php:113
+msgid "Contact publisher"
+msgstr "Contact publisher"
+
+#: tmp/spain/./item.php:202
+msgid "The listing is expired. You can't contact the publisher."
+msgstr "The listing is expired. You can't contact the publisher."
+
+#: tmp/spain/./item.php:206
+msgid "It's your own listing, you can't contact the publisher."
+msgstr "It's your own listing, you can't contact the publisher."
+
+#: tmp/spain/./item.php:210
+msgid ""
+"You must log in or register a new account in order to contact the advertiser"
+msgstr ""
+"You must log in or register a new account in order to contact the advertiser"
+
+#: tmp/spain/./item.php:226
+msgid "Tel"
+msgstr "Tel"
+
+#: tmp/spain/./item.php:237
+msgid "Attachments"
+msgstr "Attachments"
+
+#: tmp/spain/./item.php:254 tmp/spain/./user-public-profile.php:136
+msgid "Enter the words above"
+msgstr "Enter the words above"
+
+#: tmp/spain/./item.php:256 tmp/spain/./user-public-profile.php:138
+msgid "Help"
+msgstr "Help"
+
+#: tmp/spain/./main.php:54
+msgid "Latest Listings"
+msgstr "Latest Listings"
+
+#: tmp/spain/./main.php:56
+msgid "No Latest Listings"
+msgstr "No Latest Listings"
+
+#: tmp/spain/./main.php:86
+msgid "See all offers"
+msgstr "See all offers"
+
+#: tmp/spain/./search.php:194
+msgid "Sort by"
+msgstr "Sort by"
+
+#: tmp/spain/./search.php:213
+#, php-format
+msgid "There are no results matching \"%s\""
+msgstr "There are no results matching \"%s\""
+
+#: tmp/spain/./search.php:242
+msgid "Your search"
+msgstr "Your search"
+
+#: tmp/spain/./search.php:257
+msgid "Show only"
+msgstr "Show only"
+
+#: tmp/spain/./search.php:262
+msgid "Show only listings with pictures"
+msgstr "Show only listings with pictures"
+
+#: tmp/spain/./search.php:270
+msgid "Min"
+msgstr "Min"
+
+#: tmp/spain/./search.php:272
+msgid "Max"
+msgstr "Max"
+
+#: tmp/spain/./search.php:309
+msgid "Apply"
+msgstr "Apply"
+
+#: tmp/spain/./search.php:327
+msgid "Selected"
+msgstr "Selected"
+
+#: tmp/spain/./search.php:328
+msgid "Nothing selected, input was"
+msgstr "Nothing selected, input was"
+
+#: tmp/spain/./search_gallery.php:41 tmp/spain/./search_list.php:41
+msgid "Sponsored ad"
+msgstr "Sponsored ad"
+
+#: tmp/spain/./user-alerts.php:32 tmp/spain/./user-change_email.php:62
+#: tmp/spain/./user-change_password.php:33
+#: tmp/spain/./user-change_username.php:82 tmp/spain/./user-dashboard.php:33
+#: tmp/spain/./user-items.php:33 tmp/spain/./user-profile.php:37
+msgid "User account manager"
+msgstr "User account manager"
+
+#: tmp/spain/./user-alerts.php:37
+msgid "Your alerts"
+msgstr "Your alerts"
+
+#: tmp/spain/./user-alerts.php:39
+msgid "You do not have any alerts yet"
+msgstr "You do not have any alerts yet"
+
+#: tmp/spain/./user-alerts.php:43
+msgid "Alert"
+msgstr "Alert"
+
+#: tmp/spain/./user-alerts.php:43
+msgid "This action can't be undone. Are you sure you want to continue?"
+msgstr "This action can't be undone. Are you sure you want to continue?"
+
+#: tmp/spain/./user-alerts.php:43
+msgid "Delete this alert"
+msgstr "Delete this alert"
+
+#: tmp/spain/./user-alerts.php:49 tmp/spain/./user-dashboard.php:49
+#: tmp/spain/./user-items.php:52
+msgid "Publication date"
+msgstr "Publication date"
+
+#: tmp/spain/./user-alerts.php:57
+msgid "Listings"
+msgstr "Listings"
+
+#: tmp/spain/./user-change_email.php:68
+msgid "Change your e-mail"
+msgstr "Change your e-mail"
+
+#: tmp/spain/./user-change_email.php:75
+msgid "Current e-mail"
+msgstr "Current e-mail"
+
+#: tmp/spain/./user-change_email.php:79
+msgid "New e-mail"
+msgstr "New e-mail"
+
+#: tmp/spain/./user-change_password.php:39
+msgid "Change your password"
+msgstr "Change your password"
+
+#: tmp/spain/./user-change_password.php:45
+msgid "Current password"
+msgstr "Current password"
+
+#: tmp/spain/./user-change_password.php:49
+#: tmp/spain/./user-forgot_password.php:41
+msgid "New password"
+msgstr "New password"
+
+#: tmp/spain/./user-change_password.php:53
+#: tmp/spain/./user-forgot_password.php:45
+msgid "Repeat new password"
+msgstr "Repeat new password"
+
+#: tmp/spain/./user-change_username.php:40
+msgid "Username: this field is required"
+msgstr "Username: this field is required"
+
+#: tmp/spain/./user-change_username.php:65
+msgid "The username is available"
+msgstr "The username is available"
+
+#: tmp/spain/./user-change_username.php:67
+msgid "The username is NOT available"
+msgstr "The username is NOT available"
+
+#: tmp/spain/./user-change_username.php:88
+msgid "Change your username"
+msgstr "Change your username"
+
+#: tmp/spain/./user-change_username.php:95 tmp/spain/./user-profile.php:74
+msgid "Username"
+msgstr "Username"
+
+#: tmp/spain/./user-change_username.php:99
+msgid ""
+"WARNING: Once set, you will not be able to change your username again. "
+"Choose wisely."
+msgstr ""
+"WARNING: Once set, you will not be able to change your username again. "
+"Choose wisely."
+
+#: tmp/spain/./user-dashboard.php:39
+#, php-format
+msgid "Listings from %s"
+msgstr "Listings from %s"
+
+#: tmp/spain/./user-dashboard.php:41
+msgid "No listings have been added yet"
+msgstr "No listings have been added yet"
+
+#: tmp/spain/./user-dashboard.php:52
+msgid "View listing"
+msgstr "View listing"
+
+#: tmp/spain/./user-dashboard.php:54 tmp/spain/./user-items.php:56
+msgid "Edit"
+msgstr "Edit"
+
+#: tmp/spain/./user-dashboard.php:57 tmp/spain/./user-items.php:61
+msgid "Activate"
+msgstr "Activate"
+
+#: tmp/spain/./user-forgot_password.php:33 tmp/spain/./user-recover.php:33
+msgid "Recover your password"
+msgstr "Recover your password"
+
+#: tmp/spain/./user-forgot_password.php:48
+msgid "Change password"
+msgstr "Change password"
+
+#: tmp/spain/./user-items.php:39
+msgid "Your listings"
+msgstr "Your listings"
+
+#: tmp/spain/./user-items.php:39
+msgid "Post a new listing"
+msgstr "Post a new listing"
+
+#: tmp/spain/./user-items.php:41
+msgid "You don't have any listings yet"
+msgstr "You don't have any listings yet"
+
+#: tmp/spain/./user-items.php:47
+msgid "Active"
+msgstr "Active"
+
+#: tmp/spain/./user-items.php:47
+msgid "Inactive"
+msgstr "Inactive"
+
+#: tmp/spain/./user-items.php:48
+msgid "Premium"
+msgstr "Premium"
+
+#: tmp/spain/./user-items.php:49
+msgid "Spam"
+msgstr "Spam"
+
+#: tmp/spain/./user-items.php:58
+msgid "This action can not be undone. Are you sure you want to continue?"
+msgstr "This action can not be undone. Are you sure you want to continue?"
+
+#: tmp/spain/./user-login.php:33
+msgid "Access to your account"
+msgstr "Access to your account"
+
+#: tmp/spain/./user-profile.php:43
+msgid "Update your profile"
+msgstr "Update your profile"
+
+#: tmp/spain/./user-profile.php:78
+msgid "Modify username"
+msgstr "Modify username"
+
+#: tmp/spain/./user-profile.php:86
+msgid "Modify e-mail"
+msgstr "Modify e-mail"
+
+#: tmp/spain/./user-profile.php:86
+msgid "Modify password"
+msgstr "Modify password"
+
+#: tmp/spain/./user-profile.php:90
+msgid "User type"
+msgstr "User type"
+
+#: tmp/spain/./user-profile.php:94
+msgid "Cell phone"
+msgstr "Cell phone"
+
+#: tmp/spain/./user-profile.php:98
+msgid "Phone"
+msgstr "Phone"
+
+#: tmp/spain/./user-profile.php:122 tmp/spain/./user-public-profile.php:70
+msgid "Website"
+msgstr "Website"
+
+#: tmp/spain/./user-profile.php:130
+msgid "Delete my account"
+msgstr "Delete my account"
+
+#: tmp/spain/./user-profile.php:137
+msgid "Delete account"
+msgstr "Delete account"
+
+#: tmp/spain/./user-profile.php:140
+msgid ""
+"All your listings and alerts will be removed, this action can not be undone."
+msgstr ""
+"All your listings and alerts will be removed, this action can not be undone."
+
+#: tmp/spain/./user-public-profile.php:59
+#, php-format
+msgid "%s's profile"
+msgstr "%s's profile"
+
+#: tmp/spain/./user-public-profile.php:65
+msgid "Profile"
+msgstr "Profile"
+
+#: tmp/spain/./user-public-profile.php:67
+msgid "Full name"
+msgstr "Full name"
+
+#: tmp/spain/./user-public-profile.php:71
+msgid "User Description"
+msgstr "User Description"
+
+#: tmp/spain/./user-public-profile.php:75
+msgid "Latest listings"
+msgstr "Latest listings"
+
+#: tmp/spain/./user-recover.php:40
+msgid "Send me a new password"
+msgstr "Send me a new password"
+
+#: tmp/spain/./user-register.php:36
+msgid "Register an account for free"
+msgstr "Register an account for free"
+
+#: tmp/spain/./user-register.php:45
+msgid "Re-type password"
+msgstr "Re-type password"
+
+#: tmp/spain/./user-register.php:47
+msgid "Passwords don't match"
+msgstr "Passwords don't match"
+
+#: tmp/spain/./user-register.php:52
+msgid "Create"
+msgstr "Create"
