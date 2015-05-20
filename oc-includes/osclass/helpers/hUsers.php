@@ -109,6 +109,18 @@
         return (string) Session::newInstance()->_get('userName');
     }
 
+	/**
+     * Gets logged user first name
+     *
+     * @return string
+     */
+    function osc_logged_user_first_name() {
+	      $user_name=osc_logged_user_name();
+		  
+        return (string) strtok($user_name, " ");
+    }
+
+	
     /**
      * Gets logged user phone
      *
