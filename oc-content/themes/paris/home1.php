@@ -58,11 +58,11 @@ line-height: 1;
 }
 
 .carousel-control.left span {
-	padding: 15px;
+	padding: 9px;
 }
 
 .carousel-control.right span {
-	padding: 15px;
+	padding: 9px;
 }
 
 .carousel-control .fa-chevron-left, 
@@ -119,7 +119,7 @@ line-height: 1;
 }
 
 .header-text h2 span {
-    background-color: rgba(57, 96, 145, .65);
+    /*background-color: rgba(57, 96, 145, .65);*/
 	padding: 10px;
 }
 
