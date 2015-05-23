@@ -3,7 +3,7 @@
         <div class="votes_stars">
             <?php if( $vote['can_vote'] ) { ?>
             <div class="votes_vote">
-                <div class="votes_txt_vote"><?php _e('Vote', 'voting');?></div>
+                <div class="votes_txt_vote"><?php _e('Your Rating', 'voting');?></div>
                 <div class="votes_star">
                     <span id="">
                         <a href="#" rel="nofollow" title="<?php _e('Without interest', 'voting');?>" class="aPs vote1"></a>
@@ -17,7 +17,7 @@
             </div>
             <?php } ?>
             <div class="votes_results">
-                <span style="float:left; padding-right: 4px;"><?php _e('Result', 'voting');?>  </span>
+                <span style="float:left; padding-right: 4px;"><?php _e('Rating', 'voting');?>  </span>
                 <?php
                     $avg_vote = $vote['vote'];
                     if($avg_vote==5) {

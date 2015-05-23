@@ -94,6 +94,7 @@
 
 <div class="product-price">
                     <h2><?php if( osc_price_enabled_at_items() && osc_item_category_price_enabled() ) { ?><?php echo osc_item_formated_price(); ?><?php } ?></h2>
+					<p><?php voting_item_detail(); ?></p>
 <div class="add-to-box">
 <!-- Small modal -->
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".bs-example-modal-sm"><i class="fa fa-shopping-cart"></i> <?php _e('Book Now', 'paris'); ?></button><?php osc_current_web_theme_path('common/'.osc_get_preference('wl-us', 'paris').'-watchlist.php') ; ?>
@@ -213,7 +214,7 @@
       <li class="active"><a href="#detail" data-toggle="tab"><?php _e('Description', 'paris'); ?></a></li>
       <li><a href="#profile" data-toggle="tab"><?php _e('Additional', 'paris'); ?></a></li>
  <!--<li><a href="#more" data-toggle="tab"><?php _e('Contact seller', 'paris'); ?></a></li>-->
- <li><a href="#review" data-toggle="tab"><?php _e('Comments', 'paris'); ?></a></li>
+ <li><a href="#review" data-toggle="tab"><?php _e('Reviews', 'paris'); ?></a></li>
  <li><a href="#warning" data-toggle="tab"><?php _e('Warning', 'paris'); ?></a></li>
      
     </ul>
@@ -374,7 +375,8 @@
 <?php if( osc_comments_enabled() ) { ?>
                     <?php if( osc_reg_user_post_comments () && osc_is_web_user_logged_in() || !osc_reg_user_post_comments() ) { ?>
                     <div id="comments">
-                        <strong><?php _e('Comments', 'paris'); ?></strong>
+                        <strong><?php _e('Ratings and reviews', 'paris'); ?></strong>
+						<?php voting_item_detail(); ?>
                         <ul id="comment_error_list"></ul>
                         <?php CommentForm::js_validation(); ?>
                         <?php if( osc_count_item_comments() >= 1 ) { ?>
