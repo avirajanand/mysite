@@ -179,7 +179,7 @@
           </button>
          
         </div>
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+                        <div class="collapse" id="bs-example-navbar-collapse-9">
                             <?php osc_goto_first_category() ; ?>
                             <?php if(osc_count_categories () > 0) { ?>
                             <ul class="nav navbar-nav">

@@ -766,7 +766,7 @@ margin-bottom: 1px;
 #footer #footer-main {
 padding: 50px 0;
 }
-.navbar-nav>li>a{text-transform: uppercase;
+.navbar-nav>li>a{text-transform: capitalise;
 }
 .logo{margin-top:6px;
 }

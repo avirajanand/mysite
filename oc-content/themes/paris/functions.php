@@ -554,3 +554,5 @@ osc_remove_preference('premiumads_num_ads', 'paris');
     }
 osc_add_hook('admin_page_header', 'theme_paris_admin_regions_message', 10);
 ?>
+
+<?php osc_remove_hook('item_detail', 'voting_item_detail'); ?>

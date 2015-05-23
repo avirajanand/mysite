@@ -3393,6 +3393,10 @@ input[type="button"].btn-block {
   display: none;
   visibility: hidden;
 }
+#bs-example-navbar-collapse-9{
+display: block;
+  visibility: visible;
+}
 .collapse.in {
   display: block;
   visibility: visible;
@@ -3472,7 +3476,7 @@ tbody.collapse.in {
   clear: both;
   font-weight: normal;
   line-height: 1.42857143;
-  color: #7b8a8b;
+  color: #000000;
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
@@ -4312,7 +4316,7 @@ margin:15px 0px 2px;
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 19.5px;
+    padding-top: 15.5px;
     padding-bottom: 19.5px;
   }
 }
@@ -5832,7 +5836,7 @@ button.close {
   filter: alpha(opacity=0);
 }
 .modal-backdrop.in {
-  opacity: 0.5;
+  opacity: 0.95;
   filter: alpha(opacity=50);
 }
 .modal-header {

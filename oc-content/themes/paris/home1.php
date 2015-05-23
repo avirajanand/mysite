@@ -23,7 +23,7 @@
 
 /* Carousel Styles */
 .carousel-indicators .active {
-    background-color: #2980b9;
+    background-color: rgba(24, 188, 156,.7);
 }
 
 .carousel-inner img {
@@ -31,7 +31,7 @@
    
 }
 .carousel-indicators {
-bottom: 70px;
+bottom: 35px;
 }
 .carousel {
 position: relative;
@@ -58,11 +58,11 @@ line-height: 1;
 }
 
 .carousel-control.left span {
-	padding: 15px;
+	padding: 9px;
 }
 
 .carousel-control.right span {
-	padding: 15px;
+	padding: 9px;
 }
 
 .carousel-control .fa-chevron-left, 
@@ -70,7 +70,7 @@ line-height: 1;
 .carousel-control .icon-prev, 
 .carousel-control .icon-next {
 	position: absolute;
-	top: 45%;
+	top: 40%;
 	z-index: 5;
 	display: inline-block;
 }
@@ -87,7 +87,7 @@ line-height: 1;
 
 .carousel-control.left span,
 .carousel-control.right span {
-	background-color: #000;
+	background-color: rgba(24, 188, 156,.7) ;
 }
 
 .carousel-control.left span:hover,
@@ -102,7 +102,7 @@ line-height: 1;
     top: 20%;
     left: 1.8%;
     right: auto;
-    width: 96.66666666666666%;
+    width: 96.66%;
     color: #fff;
 }
 .header-text h1 {color:#fff;
@@ -110,7 +110,7 @@ line-height: 1;
 }
 
 .header-text h1 span {
-    background-color: rgba(44, 62, 80, 0.65);
+    /*background-color: rgba(57, 96, 145, .65);*/
 	padding: 10px;
 }
 
@@ -119,7 +119,7 @@ line-height: 1;
 }
 
 .header-text h2 span {
-    background-color: rgba(44, 62, 80, 0.65);
+    /*background-color: rgba(57, 96, 145, .65);*/
 	padding: 10px;
 }
 
@@ -135,14 +135,14 @@ line-height: 1;
 
 .btn-theme {
     color: #fff;
-    background-color:rgba(44, 62, 80, 0.66);
+    background-color:rgba(57, 96, 145, .65);	
     border: 2px solid #fff;
     margin-right: 15px;
 }
 
 .btn-theme:hover {
     color: #fff;
-    background-color: rgba(11, 42, 73, 0.75);
+    background-color: rgba(24, 188, 156,.7);
     border-color: #fff;
 }
 </style>
