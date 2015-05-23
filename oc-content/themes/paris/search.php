@@ -247,6 +247,8 @@
                         </div>
                     <?php } ?>
                     <div class="clear"></div>
+					<div id="related-searches">
+                     <h5><?php _e('Other searches that may interest you','paris'); ?></h5>
                     <?php $footerLinks = osc_search_footer_links(); ?>
                     <ul class="footer-links">
                     <?php foreach($footerLinks as $f) { View::newInstance()->_exportVariableToView('footer_link', $f); ?>
@@ -254,6 +256,7 @@
                         <li><a href="<?php echo osc_footer_link_url(); ?>"><?php echo osc_footer_link_title(); ?></a></li>
                     <?php } ?>
                     </ul>
+					</div>
                     <div class="clear"></div>
                 </div>
             </div>

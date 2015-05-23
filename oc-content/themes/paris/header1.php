@@ -72,7 +72,7 @@
 <?php if(osc_users_enabled()) { ?>
                         <?php if( osc_is_web_user_logged_in() ) { ?>
                             <li></li>
-                            <li><a href="<?php echo osc_user_dashboard_url() ; ?>"> <?php echo sprintf(__('Hi %s', 'paris'), osc_logged_user_name() . '!'); ?></a></li>
+                            <li><a href="<?php echo osc_user_dashboard_url() ; ?>"> <?php echo sprintf(__('Hi %s', 'paris'), osc_logged_user_first_name() . '!'); ?></a></li>
 <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?php _e('My account', 'paris') ; ?><span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -173,11 +173,11 @@
       <span class="input-group-btn">
         <button type="submit" class="btn btn-default" type="button"><i class="fa fa-search"></i> <?php _e('Search', 'paris'); ?></button>
       </span>
-    <div>
+    </div>
     </fieldset>
 </form>
 </div>
-
+<!--
 <div class="col-md-4 col-xs-6">
 <p class="kanan ulfa">
   
@@ -185,7 +185,7 @@
   
 </p>
 </div>
-
+-->
 
 </div>
             <div class="breadcrumb_wrapper"><div class="container" style="z-index: 5;">

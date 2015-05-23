@@ -35,8 +35,8 @@ Theme update URI: paris_2
              'name'        => 'paris'
             ,'version'     => '1.9.5'
             ,'description' => 'Paris Responsive Osclass Themes'
-            ,'author_name' => 'OsclassDotMe'
-            ,'author_url'  => 'http://osclass.me'
+            ,'author_name' => 'Playtang'
+            ,'author_url'  => 'http://www.playtang.com'
             ,'locations'   => array()
         );
     }

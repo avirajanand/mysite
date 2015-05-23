@@ -31,7 +31,7 @@
                 <img src="<?php echo osc_resource_thumbnail_url() ; ?>" title="<?php echo osc_premium_title(); ?>" alt="<?php echo osc_premium_title(); ?>" /> <span><a href="<?php echo osc_premium_url() ; ?>"><?php echo osc_premium_title(); ?></a> <?php if( osc_price_enabled_at_items() ) { ?> <small><strong><?php echo osc_premium_formated_price() ; ?></strong></small><?php } ?></span>
             </a></li>
         <?php } else { ?><li><a class="thumbnail" href="<?php echo osc_premium_url() ; ?>">
-            <img src="<?php echo osc_current_web_theme_url('images/4.jpg') ; ?>"></a>
+            <img src="<?php echo osc_current_web_theme_url('images/basketball2.jpg') ; ?>"></a>
         <?php } ?>
         </li>
       

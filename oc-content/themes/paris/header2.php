@@ -68,15 +68,16 @@
     </a>
 
                
-            </div></div>
-
+            </div>
+			</div>
+<!--
 <div class="col-md-6 col-xs-6">
 <p class="kanan">
   <button type="button" onclick="parent.location='<?php echo osc_item_post_url_in_category() ; ?>'" class="btn btn-warning btn-lg"><span class="fa fa-plus" aria-hidden="true"></span> <?php _e("Publish your ad for free", 'paris'); ?></a></button>
   
 </p>
 </div>
-
+-->
 
 </div>
             <div id="breadcrumb_wrapper"><nav class="navbar navbar-default ">

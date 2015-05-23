@@ -179,13 +179,13 @@
 </form>
 </div>
 
-<div class="col-md-4 col-xs-6">
+<!--<div class="col-md-4 col-xs-6">
 <p class="kanan ulfa">
   
   <button type="button" onclick="parent.location='<?php echo osc_item_post_url_in_category() ; ?>'" class="btn btn-primary btn-medium"><span class="fa fa-plus" aria-hidden="true"></span> <?php _e("Publish your ad for free", 'paris'); ?></a></button>
   
 </p>
-</div>
+</div>-->
 
 
 </div>
@@ -206,7 +206,7 @@
                             <?php if(osc_count_categories () > 0) { ?>
                             <ul class="nav navbar-nav">
                                 <?php while ( osc_has_categories() ) { ?>
-                                <li class="dropdown <?php echo osc_category_slug() ; ?><?php if ( osc_count_subcategories() > 0 ) { ?> menu<?php } ?>">
+                                <li class=" <?php echo osc_category_slug() ; ?><?php if ( osc_count_subcategories() > 0 ) { ?> menu<?php } ?>">
                                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" href="<?php echo osc_search_category_url() ; ?>" <?php if ( osc_count_subcategories() > 0 ) { ?>class="menu"<?php } ?>><?php View::newInstance()->_erase('subcategories'); echo osc_category_name() ; ?><span class="caret"></span></a>
                                     <?php if ( osc_count_subcategories() > 0 ) { ?>
                                     <ul class="dropdown-menu" role="menu">

@@ -51,7 +51,7 @@
 <form action="<?php echo osc_base_url(true); ?>" method="get" class="navbar-form navbar-left" role="search" onsubmit="javascript:return doSearch();">
     <input type="hidden" name="page" value="search" />
     <fieldset class="form-group"><div id="search-example">
-        <input type="text" name="sPattern"  class="form-control" placeholder="<?php echo osc_esc_html(__(osc_get_preference('keyword_placeholder', 'paris_theme'), 'paris')); ?>" value="<?php echo osc_esc_html( ( osc_search_pattern() != '' ) ? osc_search_pattern() : $sQuery ); ?>"/>
+        <input type="text" name="sPattern"  class="form-control" placeholder="Search any location" value="<?php echo osc_esc_html( ( osc_search_pattern() != '' ) ? osc_search_pattern() : $sQuery ); ?>"/>
        
 <?php chosen_select_standard() ; ?>
     	<button type="submit" class="btn btn-success"><?php _e('Search', 'paris'); ?></button></div>

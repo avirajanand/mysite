@@ -63,7 +63,7 @@
 <meta http-equiv="Cache-Control" content="no-cache" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta http-equiv="Expires" content="Fri, Jan 01 1970 00:00:00 GMT" />
-<link href="<?php echo osc_current_web_theme_url('images/favicon.jpg') ; ?>" rel="shortcut icon">
+<link href="<?php echo osc_current_web_theme_url('images/favicon.png') ; ?>" rel="shortcut icon">
 
 <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>

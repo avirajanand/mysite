@@ -297,8 +297,8 @@ if( !function_exists('logo_slider_2') ) {
         View::newInstance()->_exportVariableToView('categories', Category::newInstance()->toTree() ) ;
 
         if( osc_count_categories() > 0 ) {
-            echo '<select name="sCategory" class="form-control anita" data-placeholder="' . __('Select a category', 'paris') . '" class="form-control">' ;
-            echo '<option>' . __('Select a category', 'paris') . '</option>' ;
+            echo '<select name="sCategory" class="form-control anita" data-placeholder="' . __('Select any sports', 'paris') . '" class="form-control">' ;
+            echo '<option>' . __('All Sports', 'paris') . '</option>' ;
             while( osc_has_categories() ) {
                 echo '<option value="' . osc_category_id() . '">' . osc_category_name() . '</option>' ;
                 if( osc_count_subcategories() > 0 ) {
@@ -455,6 +455,30 @@ TRIGGER FUNCTIONS
     }
     osc_add_hook('search_ads_listing_medium1', 'search_ads_listing_medium_fn1');
 
+	if( !function_exists('get_gravatar') ) {
+        function get_gravatar($email = null, $size = 65) {
+			$fb_user = OSCFacebook::newInstance()->getUser();
+			if($fb_user != 0)
+			{
+				return "https://graph.facebook.com/$fb_user/picture?width=$size";
+			}
+            $email = md5( strtolower( trim( $email ) ) );
+            $default = urlencode( osc_current_web_theme_url('images/avatar.png') );
+            return "http://www.gravatar.com/avatar/$email?s=$size&d=$default";
+        }
+    }
+	
+	if( !function_exists('get_profile_image') ) {
+        function get_profile_image($size = 65) {
+			$fb_user = OSCFacebook::newInstance()->getUser();
+			if($fb_user != 0)
+			{
+				return "https://graph.facebook.com/$fb_user/picture?width=$size";
+			}
+            return get_gravatar(osc_logged_user_email() , $size);
+        }
+    }
+	
     /* remove theme */
     function paris_delete_theme() {
 osc_remove_preference('keyword_placeholder', 'paris');
