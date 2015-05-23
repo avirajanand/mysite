@@ -373,7 +373,6 @@
         
 
 <?php if( osc_comments_enabled() ) { ?>
-                    <?php if( osc_reg_user_post_comments () && osc_is_web_user_logged_in() || !osc_reg_user_post_comments() ) { ?>
                     <div id="comments">
                         <strong><?php _e('Ratings and reviews', 'paris'); ?></strong>
 						<?php voting_item_detail(); ?>
@@ -397,6 +396,7 @@
                                 </div>
                             </div>
                         <?php } ?>
+						<?php if( osc_reg_user_post_comments () && osc_is_web_user_logged_in() || !osc_reg_user_post_comments() ) { ?>
                         <form action="<?php echo osc_base_url(true); ?>" method="post" name="comment_form" id="comment_form">
                             <fieldset>
                                 <strong><?php _e('Leave your comment', 'paris'); ?></strong><br></br>
