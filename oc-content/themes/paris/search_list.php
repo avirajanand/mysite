@@ -35,6 +35,7 @@
                         <a href="<?php echo osc_premium_url(); ?>"><img src="<?php echo osc_current_web_theme_url('images/no_photo.gif'); ?>" title="" alt="" /></a>
                     <?php } ?>
                  </div>
+				 <div class="type_list"><?php echo osc_premium_category(); ?></div>
                  <?php } ?><span class="cat-label cat-label-label2">Hot!</span>
                  <div class="col-md-9 text kat1">
                      <h3>
@@ -63,6 +64,7 @@
                          <a href="<?php echo osc_item_url(); ?>"><img src="<?php echo osc_current_web_theme_url('images/no_photo.gif'); ?>" title="" alt="" /></a>
                     <?php } ?>
                  </div>
+				 <div class="type_list"><?php echo osc_item_category(); ?></div>
                  <?php } ?>
                  <div class="col-md-9 text kat1">
                      <h3>
@@ -84,3 +86,14 @@
         <?php } ?>
     </tbody>
 </table>
+
+<style>
+.type_list{
+		 width: 21.3%;
+		 height: 25px;
+		 position: absolute;
+		 background: rgba(24, 188, 156, .9);
+		 color: #ffffff;
+		 text-align:center;
+		 margin:100px 15px 5px;
+</style>

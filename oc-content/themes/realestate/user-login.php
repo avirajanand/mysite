@@ -33,8 +33,8 @@
                         <div class="row ui-row-text"><label for="password"><?php _e('Password', 'realestate'); ?></label> <?php UserForm::password_login_text() ; ?></div>
                         <p class="checkbox"><?php UserForm::rememberme_login_checkbox();?> <label for="rememberMe"><?php _e('Remember me', 'realestate') ; ?></label></p>
                         <div class="actions actions-side">
-                            <div class="side"><a href="#" class="ui-button ui-button-gray js-submit"><?php _e("Log in", 'realestate');?></a></div>
-                            <div class="mini">
+                            <div class="login-button side"><a href="#" class="ui-button ui-button-gray js-submit"><?php _e("Log in", 'realestate');?></a></div>
+                            <div class="register">
                             <a href="<?php echo osc_register_account_url() ; ?>"><?php _e("Register for a free account", 'realestate') ; ?></a><br />
                             <a href="<?php echo osc_recover_user_password_url() ; ?>"><?php _e("Forgot password?", 'realestate') ; ?></a>
                             </div>

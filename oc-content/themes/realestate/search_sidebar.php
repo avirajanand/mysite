@@ -7,7 +7,7 @@
             <?php foreach(osc_search_user() as $userId) { ?>
             <input type="hidden" name="sUser[]" value="<?php echo $userId; ?>"/>
             <?php } ?>
-            <fieldset class="box location">
+            <fieldset id="fs1" class="box location">
                 <label><?php _e('Your search', 'realestate'); ?></label>
                 <div class="row one_input">
                     <div class="has-placeholder"><span id="search-placeholder"><?php echo osc_get_preference('keyword_placeholder_','realestate') ; ?></span><input type="text" name="sPattern" id="query"  class="ui-input-text" value="<?php echo Params::getParam('sPattern'); ?>" /></div>
@@ -17,7 +17,7 @@
                 <input type="text" id="sCity" name="sCity" value="<?php echo osc_search_city() ; ?>" class="ui-input-text"/>
             </fieldset>
 
-            <fieldset class="box show_only">
+            <fieldset id="fs2" class="box show_only">
                 <?php if( osc_images_enabled_at_items() ) { ?>
                     <div class="label"><input type="checkbox" name="bPic" id="withPicture" value="1" <?php echo (osc_search_has_pic() ? 'checked' : ''); ?> /><?php _e('Only items with pictures', 'realestate') ; ?></div>
                 <?php } ?>
@@ -31,7 +31,7 @@
                 </label>
                 <?php } ?>
             </fieldset>
-            <fieldset class="box show_only">
+            <fieldset id="fs3" class="box show_only">
                 <?php  osc_get_non_empty_categories(); ?>
                 <?php  if ( osc_count_categories() ) { ?>
                 <label><?php _e('Category', 'realestate') ; ?></label>
@@ -59,15 +59,20 @@
             </fieldset>
             <div class="form-hook">
             <?php
+			//print_r( osc_search_category_id());
+			//osc_run_hook('search_form',1) ;
+			
                 if(osc_search_category_id()) {
                     osc_run_hook('search_form', osc_search_category_id()) ;
                 } else {
                     osc_run_hook('search_form') ;
                 }
+				
             ?>
             </div>
-            <div class="submit-box">
-            <button type="submit" class="ui-button-submit"><?php _e('Apply filters', 'realestate') ; ?></button>
+            <div class="submit-box" >
+            <button type="submit" class="ui-button-submit" style="">
+			<?php _e('Apply filters', 'realestate') ; ?></button>
             </div>
         </form>
     </div>

@@ -36,6 +36,9 @@
         };?>
         <meta name="robots" content="<?php echo osc_apply_filter('meta_robots','index, follow'); ?>" />
         <meta name="googlebot" content="<?php echo osc_apply_filter('meta_robots','index, follow'); ?>" />
+		
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  
     </head>
 <body>
 
@@ -50,39 +53,48 @@
 <div style="clear:both;"></div>
 <?php osc_show_flash_message() ; ?>
 <!-- header -->
+<div class="wrapper">
 <div id="header">
+    <div class="logo_header"> 
     <a id="logo" href="<?php echo osc_base_url() ; ?>"><?php echo logo_header(); ?></a>
-    <div id="user_menu">
+	</div>
+    
+	   <div class="search-container">
+			<?php if(1) { #show search box?>
+				<form action="<?php echo osc_base_url(true); ?>" method="get" class="main-search nocsrf" <?php /* onsubmit="javascript:return doSearch();"*/ ?>>
+					<input type="hidden" name="page" value="search"/>
+					<div class="category_list">
+                    <?php osc_categories_select('sCategory', null, __('Select a game', 'realstate')) ; ?>
+                    </div>
+					<div id="search_header">
+							<?php ?>
+							
+							<input id="search_input" class="ui-input-text" type="text" name="city" id="city" value="" 							placeholder="<?php echo osc_esc_html(__(osc_get_preference('keyword_placeholder', 'bender_theme'), 'bender')); ?>" />
+						
+					</div>
+					
+					<button id="go_button"><?php _e("Go", 'realestate');?></button>
+					<div id="message-seach"></div>
+				</form>
+			<?php } ?>
+			</div>
+   
+   <div id="user_menu">
         <ul>
             <?php if(osc_users_enabled()) { ?>
                 <?php if( osc_is_web_user_logged_in() ) { ?>
-                    <li class="first logged">
+                    <li class="first logged" style="color: rgb(255, 255, 255);">
                         <?php echo sprintf(__('Hi %s', 'realestate'), osc_logged_user_name() . '!'); ?> &bull;
-                        <strong><a href="<?php echo osc_user_dashboard_url() ; ?>"><?php _e('My account', 'realestate') ; ?></a></strong> &middot;
-                        <a href="<?php echo osc_user_logout_url() ; ?>"><?php _e('Logout', 'realestate') ; ?></a>
+                        <strong><a style="color: rgb(255, 255, 255);" href="<?php echo osc_user_dashboard_url() ; ?>"><?php _e('My account', 'realestate') ; ?></a></strong> &bull;
+                        <a style="color: rgb(255, 255, 255);" href="<?php echo osc_user_logout_url() ; ?>"><?php _e('Logout', 'realestate') ; ?></a>
                     </li>
                 <?php } else { ?>
-                    <li class="first">
+                    <li class="first" style="color: rgb(255, 255, 255);">
 					<?php fbc_button(); ?>
-                        <a id="login_open" href="<?php echo osc_user_login_url(); ?>"><?php _e('Login', 'realestate') ; ?></a>
+                        <a id="login_open" style="color: rgb(255, 255, 255);" href="<?php echo osc_user_login_url(); ?>"><?php _e('Login', 'realestate') ; ?></a>
                         <?php if(osc_user_registration_enabled()) { ?>
-                            &bull; <a href="<?php echo osc_register_account_url() ; ?>"><?php _e('Register for a free account', 'realestate'); ?></a>
+                            &bull; <a href="<?php echo osc_register_account_url() ; ?>" style="color: rgb(255, 255, 255);"><?php _e('Register for a free account', 'realestate'); ?></a>
                         <?php }; ?>
-                        <form id="login" action="<?php echo osc_base_url(true) ; ?>" method="post">
-                            <fieldset>
-                                <input type="hidden" name="page" value="login" />
-                                <input type="hidden" name="action" value="login_post" />
-                                <label for="email"><?php _e('E-mail', 'realestate') ; ?></label>
-                                <?php UserForm::email_login_text() ; ?>
-                                <label for="password"><?php _e('Password', 'realestate') ; ?></label>
-                                <?php UserForm::password_login_text() ; ?>
-                                <p class="checkbox"><?php UserForm::rememberme_login_checkbox();?> <label for="rememberMe"><?php _e('Remember me', 'realestate') ; ?></label></p>
-                                <button type="submit"><?php _e('Log in', 'realestate') ; ?></button>
-                                <div class="forgot">
-                                    <a href="<?php echo osc_recover_user_password_url() ; ?>"><?php _e("Forgot password?", 'realestate');?></a>
-                                </div>
-                            </fieldset>
-                        </form>
                     </li>
                 <?php } ?>
             <?php } ?>
@@ -100,11 +112,11 @@
                 </li>
             <?php } ?>
 			
-            <div class="clear"></div>
+            
         </ul>
         
-        <div class="empty"></div>
-		<div class="locality-menu ui-actionbox" >
+        
+		<!--<div class="locality-menu ui-actionbox" >
 			<?php if(osc_count_list_regions() > 0 ) { ?>
 			<div class="box location">
 				<span class="action-title"><?php _e('Find all venues in:', 'realestate') ; ?></span>				
@@ -114,25 +126,13 @@
 				
 			</div>
 			<?php } ?>
-		</div>
+		</div>-->
     </div>
-	
-			<?php if(1) { #show search box?>
-				<form action="<?php echo osc_base_url(true); ?>" method="get" class="main-search nocsrf" <?php /* onsubmit="javascript:return doSearch();"*/ ?>>
-					<input type="hidden" name="page" value="search"/>
-					<div id="search_header" style="width:100%;padding-top:50px; padding-left:20%;">
-							<?php ?>
-							<input class="ui-input-text" style="width:500px;" type="text" name="city" id="city" class="input-text" value="" placeholder="<?php echo osc_esc_html(__(osc_get_preference('keyword_placeholder', 'bender_theme'), 'bender')); ?>" />
-							<button class="ui-button ui-button-big" style="padding:0px 0px 0px 0px; height:30px"><?php _e("Go", 'realestate');?></button>
-						
-					</div>
-					<div id="message-seach"></div>
-				</form>
-			<?php } ?>
-			
-    <div id="header-shadow"></div>
+   <!-- <div id="header-shadow"></div>-->
 </div>
-	
+</div>
+	<div class="header_footer">
+		    </div>
 	
 <!-- /header -->
 <?php if( function_exists('breadcrumbs') ) { ?>
@@ -142,6 +142,3 @@
     </div>
     <?php } ?>
 <?php } ?>
-<!-- container -->
-<div class="container">
-<?php osc_show_widgets('header') ; ?>
