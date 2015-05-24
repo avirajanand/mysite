@@ -184,16 +184,15 @@
 
 <ul id="item_location">
 <?php if ( osc_item_address() != "" ) { ?><li><?php _e("Address", 'paris'); ?>: <strong><?php echo osc_item_address(); ?></strong> <?php } ?>
-<?php if ( osc_item_city_area() != "" ) { ?><?php _e("City area", 'paris'); ?>: <strong><?php echo osc_item_city_area(); ?></strong> <?php } ?>
-<?php if ( osc_item_city() != "" ) { ?><?php _e("City", 'paris'); ?>: <strong><?php echo osc_item_city(); ?></strong> <?php } ?>
-<?php if ( osc_item_region() != "" ) { ?><?php _e("Region", 'paris'); ?>: <strong><?php echo osc_item_region(); ?></strong> <?php } ?>
-                    <?php if ( osc_item_country() != "" ) { ?><?php _e("Country", 'paris'); ?>: <strong><?php echo osc_item_country(); ?></strong></li> <?php } ?>        
+<?php if ( osc_item_city_area() != "" ) { ?><?php /*_e("City area", 'paris');*/ ?>, <strong><?php echo osc_item_city_area(); ?></strong> <?php } ?>
+<?php if ( osc_item_city() != "" ) { ?><?php /*_e("City", 'paris');*/ ?>, <strong><?php echo osc_item_city(); ?></strong> <?php } ?>
+<?php if ( osc_item_region() != "" ) { ?><?php /*_e("Region", 'paris');*/ ?>, <strong><?php echo osc_item_region(); ?></strong> <?php } ?>
+                    <?php if ( osc_item_country() != "" ) { ?><?php /*_e("Country", 'paris');*/ ?>, <strong><?php echo osc_item_country(); ?></strong></li> <?php } ?>        
                 </ul>
 
 <div id="type_dates">
                    
-                    <em class="publish"><?php if ( osc_item_pub_date() != '' ) echo __('<i title="Published date" class="fa fa-calendar"></i>', 'paris') . ' ' . osc_format_date( osc_item_pub_date() ); ?></em>
-                    <em class="update"><?php if ( osc_item_mod_date() != '' ) echo __('<i title="Modified date" class="fa fa-edit"></i>', 'paris') . ' ' . osc_format_date( osc_item_mod_date() ); ?></em>
+                    
                 
                 </div>
 
