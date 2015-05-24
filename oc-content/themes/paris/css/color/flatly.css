@@ -3933,7 +3933,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 margin-top:16px;
 }
 #location_glyph{
-margin-top:12px;
+margin-top:6px;
 }
 
 #profile_link img{
@@ -3952,7 +3952,7 @@ margin-top:12px;
 height:auto;
 text-transform: capitalize;
 padding: 10px 0px 10px 10px;
-margin: 10px -5px 0px;
+margin: 6px -5px 0px;
 }
 
 #profile-link{
