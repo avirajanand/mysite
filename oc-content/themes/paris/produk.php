@@ -46,6 +46,7 @@
                 <a href="<?php echo osc_item_url(); ?>"><img class="group list-group-image" src="<?php echo osc_resource_thumbnail_url(); ?>" title="<?php echo osc_item_title(); ?>" alt="<?php echo osc_item_title(); ?>" /></a><?php } else { ?><a href="<?php echo osc_item_url(); ?>">
             <img src="<?php echo osc_current_web_theme_url('images/no_photo.gif'); ?>" alt="" title=""/></a>
         <?php } ?><?php if( osc_item_is_premium() ) { ?> <span class="cat-label cat-label-label2">Hot!</span><?php } ?>
+		<div class="type"><?php echo osc_item_category(); ?></div>
                 <div class="caption">
                     <h4 class="group inner list-group-item-heading">
                         <small><strong><?php if( osc_price_enabled_at_items() && osc_item_category_price_enabled() ) { echo osc_item_formated_price(); ?></strong></small><br></br><a href="<?php echo osc_item_url(); ?>"><?php echo osc_item_title(); ?></a></h4>

@@ -72,7 +72,7 @@
                     <?php } else { ?>
                         <p id="report-ads">
                           <!-- Single button -->
-<div class="btn-group">
+<!--<div class="btn-group">
   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
     <?php _e('Mark as', 'paris'); ?> <span class="caret"></span>
   </button>
@@ -85,7 +85,7 @@
                                 </li>
     <li><a id="item_offensive" href="<?php echo osc_item_link_offensive(); ?>" rel="nofollow"><?php _e('offensive', 'paris'); ?></a></li>
   </ul>
-</div><button style="margin-left:5px" class="btn btn-default"><a href="<?php echo osc_item_send_friend_url(); ?>" rel="nofollow"><i class="fa fa-user"></i> <?php _e('Send to a friend', 'paris'); ?></a></button>
+</div>--><button style="margin-left:5px" class="btn btn-default"><a href="<?php echo osc_item_send_friend_url(); ?>" rel="nofollow"><i class="fa fa-user"></i> <?php _e('Send to a friend', 'paris'); ?></a></button>
                            
                            
                         </p>
@@ -215,7 +215,7 @@
       <li><a href="#profile" data-toggle="tab"><?php _e('Additional', 'paris'); ?></a></li>
  <!--<li><a href="#more" data-toggle="tab"><?php _e('Contact seller', 'paris'); ?></a></li>-->
  <li><a href="#review" data-toggle="tab"><?php _e('Reviews', 'paris'); ?></a></li>
- <li><a href="#warning" data-toggle="tab"><?php _e('Warning', 'paris'); ?></a></li>
+ <!--<li><a href="#warning" data-toggle="tab"><?php _e('Warning', 'paris'); ?></a></li>-->
      
     </ul>
     <div id="myTabContent" class="tab-content">
@@ -420,7 +420,7 @@
 </div>
                 <?php } ?>
 </div>
-
+<!--
  <div class="tab-pane fade panel" id="warning">
 <div id="useful_info">
                     <strong><?php _e('Useful information', 'paris'); ?></strong>
@@ -431,7 +431,7 @@
                         <li><?php _e('This site is never involved in any transaction, and does not handle payments, shipping, guarantee transactions, provide escrow services, or offer "buyer protection" or "seller certification"', 'paris'); ?></li>
                     </ul>
                 </div>
-</div>
+</div>-->
 
 
 </div>
