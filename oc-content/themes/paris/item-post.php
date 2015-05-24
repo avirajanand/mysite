@@ -167,19 +167,21 @@
                             <?php UserForm::country_select(osc_get_countries(), osc_user()); ?>
                         </div>
                         <div class="form-group">
-                            <label class="control-label" for="region"><?php _e('Region', 'paris'); ?> *</label>
+
+                            <label class="control-label" for="region"><?php _e('City', 'paris'); ?> *</label>
                             <?php UserForm::region_select(osc_get_regions(), osc_user()); ?>
                         </div>
                         <div class="form-group">
-                            <label class="control-label" for="city"><?php _e('City', 'paris'); ?> *</label>
+                            <label class="control-label" for="city"><?php _e('Locality', 'paris'); ?> *</label>
                               <?php UserForm::city_select(osc_get_cities(), osc_user()); ?>
                         </div>
                         <div class="form-group">
-                            <label for="city"><?php _e('City Area', 'paris'); ?></label>
+                            <label for="city"><?php _e('Address', 'paris'); ?></label>
                             <?php ItemForm::city_area_text(osc_user()); ?>
                         </div>
                         <div class="form-group">
-                            <label for="address"><?php _e('Address', 'paris'); ?></label>
+                            <label for="address"><?php _e('Search name for google map', 'paris'); ?></label>
+
                             <?php ItemForm::address_text(osc_user()); ?>
                         </div>
                         

@@ -25,7 +25,7 @@
 		 width: 100%;
 		 height: 25px;
 		 position: relative;
-		 background: rgba(24, 188, 156, .5);
+		 background: rgba(24, 188, 156, .9);
 		 color: #ffffff;
 		 text-align:center;
 		 margin:-45px 0px 5px;
@@ -193,6 +193,7 @@ color:rgb(24, 188, 156);
           </button>
          
         </div>
+
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
                             <?php osc_goto_first_category() ; ?>
                             <?php if(osc_count_categories () > 0) { ?>

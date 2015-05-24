@@ -92,7 +92,7 @@
 		 width: 21.3%;
 		 height: 25px;
 		 position: absolute;
-		 background: rgba(24, 188, 156, .5);
+		 background: rgba(24, 188, 156, .9);
 		 color: #ffffff;
 		 text-align:center;
 		 margin:100px 15px 5px;
