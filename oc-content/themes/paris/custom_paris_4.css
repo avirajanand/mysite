@@ -1,0 +1,64 @@
+@media (min-width:1200px){.wrapper{margin: 0px auto;
+width: 1200px;
+background: #fff;
+}
+.container{width: 1250px;
+}
+}
+@media (max-width:1024px){#ads3{display:none;
+}
+}
+.btn-primary {
+color: #ffffff;
+background-color: #158cba;
+border-color: #127ba3;
+}
+.btn-default a{color:#555;
+}
+a{color:#158cba;
+}
+.navbar-nav>li>a {
+text-transform: none;
+}
+#footer{
+width: 134%;
+margin: 0px -217px 0px;
+}
+
+
+
+
+!!Cusome css 2 
+
+
+
+
+@media (min-width:900px){.wrapper{margin: 0% auto;
+width: 1150px;
+background: #fff;
+}
+.container{width: 1150px;
+}
+.col-md-3{
+  padding-left: 28px;
+  padding-right: 28px;
+}
+#products{
+  margin: 0px -144px 0px -15px;
+}
+}
+@media (max-width:1024px){#ads3{display:none;
+}
+}
+.btn-primary {
+color: #ffffff;
+background-color: #158cba;
+border-color: #127ba3;
+}
+.btn-default a{color:#555;
+}
+a{color:#158cba;
+}
+.navbar-nav>li>a {
+text-transform: none;
+}
