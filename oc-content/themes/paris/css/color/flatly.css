@@ -3395,7 +3395,7 @@ input[type="button"].btn-block {
 }
 #bs-example-navbar-collapse-9{
 display: block;
-  visibility: visible;
+visibility: visible;
 }
 .collapse.in {
   display: block;
@@ -3930,7 +3930,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 
 #account_dropdown{
-margin-top:16px;
+margin-top:13px;
 }
 #location_glyph{
 margin-top:6px;
@@ -3952,7 +3952,7 @@ margin-top:6px;
 height:auto;
 text-transform: capitalize;
 padding: 10px 0px 10px 10px;
-margin: 6px -5px 0px;
+margin: 3px -5px 0px;
 }
 
 #profile-link{
