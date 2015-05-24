@@ -39,12 +39,15 @@ height: 370px;
                     <?php } ?>
                  </div>
                  <?php } ?><span class="cat-label cat-label-label2">Hot!</span>
-                 <div style="text-align:center;" class="caption">
-                     <h3>
+                 <div class="type"><?php echo osc_premium_category(); ?></div>
+				 <div style="text-align:center;" class="caption">
+                     
+                     <p>
+                         <strong><?php if( osc_price_enabled_at_items() && osc_item_category_price_enabled(osc_premium_category_id()) ) { echo osc_premium_formated_price(); ?></strong>
+<h3>
                          <span><a href="<?php echo osc_premium_url(); ?>"><?php echo osc_highlight( strip_tags( osc_premium_title() ) ); ?></a></span>
                      </h3>
-                     <p>
-                         <strong><?php if( osc_price_enabled_at_items() && osc_item_category_price_enabled(osc_premium_category_id()) ) { echo osc_premium_formated_price(); ?></strong> <br><p><i title="Location" class="fa fa-map-marker"></i> <?php } echo osc_premium_city(); ?> <?php echo osc_premium_region(); ?></p>
+						 <p class="item_location"><i title="Location" class="fa fa-map-marker"></i> <?php } echo osc_premium_city(); ?> <?php echo osc_premium_region(); ?></p>
                      </p><br><a class="btn btn-success btn-sm btn-search" href="<?php echo osc_premium_url(); ?>">More Details</a>
                      
                  </div>
@@ -68,10 +71,13 @@ height: 370px;
                     <?php } ?>
                  </div>
                  <?php } ?>
+				 <div class="type"><?php echo osc_item_category(); ?></div>
                  <div style="text-align:center;" class="caption">
-                     <h3><a href="<?php echo osc_item_url(); ?>"><?php echo osc_item_title(); ?></a></h3>
+                     
                        
-                        <p><strong> <?php if( osc_price_enabled_at_items() && osc_item_category_price_enabled() ) { echo osc_item_formated_price(); ?></strong><br><p><i title="Location" class="fa fa-map-marker"></i> <?php } echo osc_item_city(); ?>.<?php echo osc_item_region(); ?> </p>
+                        <p><strong> <?php if( osc_price_enabled_at_items() && osc_item_category_price_enabled() ) { echo osc_item_formated_price(); ?>
+						<h3><a href="<?php echo osc_item_url(); ?>"><?php echo osc_item_title(); ?></a></h3>
+						</strong><br><p><i title="Location" class="fa fa-map-marker"></i> <?php } echo osc_item_city(); ?>.<?php echo osc_item_region(); ?> </p>
                      </p><br><a class="btn btn-success btn-sm btn-search" href="<?php echo osc_item_url(); ?>">More Details</a>
                      
                  </div>

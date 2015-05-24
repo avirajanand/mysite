@@ -72,7 +72,7 @@
                     <?php } else { ?>
                         <p id="report-ads">
                           <!-- Single button -->
-<div class="btn-group">
+<!--<div class="btn-group">
   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
     <?php _e('Mark as', 'paris'); ?> <span class="caret"></span>
   </button>
@@ -85,8 +85,7 @@
                                 </li>
     <li><a id="item_offensive" href="<?php echo osc_item_link_offensive(); ?>" rel="nofollow"><?php _e('offensive', 'paris'); ?></a></li>
   </ul>
-</div><button style="margin-left:5px" class="btn btn-default"><a href="<?php echo osc_item_send_friend_url(); ?>" rel="nofollow"><i class="fa fa-user"></i> <?php _e('Send to a friend', 'paris'); ?></a></button>
-                           
+</div>--><button style="margin-left:5px" class="btn"><a href="<?php echo osc_item_send_friend_url(); ?>" rel="nofollow"><i class="fa fa-user"></i> <?php _e('Send to a friend', 'paris'); ?></a></button>                           
                            
                         </p>
                     <?php }; ?>
@@ -188,13 +187,11 @@
 <?php if ( osc_item_city() != "" ) { ?><?php /*_e("City", 'paris');*/ ?>, <strong><?php echo osc_item_city(); ?></strong> <?php } ?>
 <?php if ( osc_item_region() != "" ) { ?><?php /*_e("Region", 'paris');*/ ?>, <strong><?php echo osc_item_region(); ?></strong> <?php } ?>
                     <?php if ( osc_item_country() != "" ) { ?><?php /*_e("Country", 'paris');*/ ?>, <strong><?php echo osc_item_country(); ?></strong></li> <?php } ?>        
-                </ul>
+</ul>
 
 <div id="type_dates">
                    
-                    
-                
-                </div>
+</div>
 
 <div class="share ulfa"><!-- AddThis Button BEGIN -->
           <div class="addthis_default_style"><a class="addthis_button_compact at300m" href="#"><span class="at4-icon aticon-compact" style="background-color: rgb(252, 109, 76);"><span class="at_a11y">More Sharing Services</span></span>Share</a> <a class="addthis_button_email at300b" target="_blank" title="Email" href="#" tabindex="1000"><span class="at4-icon aticon-email" style="background-color: rgb(115, 138, 141);"><span class="at_a11y">Share on email</span></span></a><a class="addthis_button_print at300b" title="Print" href="#"><span class="at4-icon aticon-print" style="background-color: rgb(115, 138, 141);"><span class="at_a11y">Share on print</span></span></a> <a class="addthis_button_facebook at300b" title="Facebook" href="#"><span class="at4-icon aticon-facebook" style="background-color: rgb(48, 88, 145);"><span class="at_a11y">Share on facebook</span></span></a> <a class="addthis_button_twitter at300b" title="Tweet" href="#"><span class="at4-icon aticon-twitter" style="background-color: rgb(44, 168, 210);"><span class="at_a11y">Share on twitter</span></span></a></div>
@@ -214,7 +211,9 @@
       <li><a href="#profile" data-toggle="tab"><?php _e('Additional', 'paris'); ?></a></li>
  <!--<li><a href="#more" data-toggle="tab"><?php _e('Contact seller', 'paris'); ?></a></li>-->
  <li><a href="#review" data-toggle="tab"><?php _e('Reviews', 'paris'); ?></a></li>
- <li><a href="#warning" data-toggle="tab"><?php _e('Warning', 'paris'); ?></a></li>
+
+ <!--<li><a href="#warning" data-toggle="tab"><?php _e('Warning', 'paris'); ?></a></li>-->
+
      
     </ul>
     <div id="myTabContent" class="tab-content">
@@ -420,17 +419,20 @@
                 <?php } ?>
 </div>
 
+<!--
  <div class="tab-pane fade panel" id="warning">
 <div id="useful_info">
-                    <strong><?php _e('Useful information', 'paris'); ?></strong>
+                    <strong><?php //_e('Useful information', 'paris'); ?></strong>
                     <ul>
-                        <li><?php _e('Avoid scams by acting locally or paying with PayPal', 'paris'); ?></li>
-                        <li><?php _e('Never pay with Western Union, Moneygram or other anonymous payment services', 'paris'); ?></li>
-                        <li><?php _e('Don\'t buy or sell outside of your country. Don\'t accept cashier cheques from outside your country', 'paris'); ?></li>
-                        <li><?php _e('This site is never involved in any transaction, and does not handle payments, shipping, guarantee transactions, provide escrow services, or offer "buyer protection" or "seller certification"', 'paris'); ?></li>
+                        <li><?php //_e('Avoid scams by acting locally or paying with PayPal', 'paris'); ?></li>
+                        <li><?php //_e('Never pay with Western Union, Moneygram or other anonymous payment services', 'paris'); ?></li>
+                        <li><?php //_e('Don\'t buy or sell outside of your country. Don\'t accept cashier cheques from outside your country', 'paris'); ?></li>
+                        <li><?php //_e('This site is never involved in any transaction, and does not handle payments, shipping, guarantee transactions, provide escrow services, or offer "buyer protection" or "seller certification"', 'paris'); ?></li>
                     </ul>
                 </div>
 </div>
+=======
+</div>-->
 
 
 </div>

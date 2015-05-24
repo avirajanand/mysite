@@ -577,19 +577,22 @@ display: none;
 }
 .list-group-item .caption p{margin:5px;display: inherit;
 }
+.item_location{
+  margin: 10px 0px 5px !important;
+}
 /* Thumbnail Box */
 .caption h4 {
     font-size: 1rem;
     color: #444;
     }
     .caption p {
-        font-size: 0.75rem;
-        color: #999;
+        font-size: 15px;
+        color: #2c3e50;
         }
         .btn.btn-mini {
             font-size: 0.63rem;
             }
-.list-group-item .thumbnail img{max-width:100%;padding:4px;
+.list-group-item .thumbnail img{max-width:100%;
 }
 span.cat-label {
 position: absolute;

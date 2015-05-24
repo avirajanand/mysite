@@ -20,9 +20,15 @@
      */
 ?>
         <?php osc_current_web_theme_path('header.php') ; ?>
+	<div class="container">	
+	    <div class="left-container">
+		<?php require('search_sidebar.php') ; ?>
+		</div>
+		<!--<div class="right-container">	
+		</div>-->
         <div class="content home">
-            <div id="right-side">
-                <h1><?php _e('Search results', 'realestate') ; ?></h1>
+            <div class="search_result">   
+				<h1 class="search_title">Home > Search</h1>
                 <div class="ad_list">
                     <div id="list_head">
                         <?php _e('Sort by', 'realestate'); ?>:
@@ -56,7 +62,8 @@
                     <?php } ?>
                 </div>
             </div>
-            <?php require('search_sidebar.php') ; ?>
+		</div>
+            
             <div class="clear"></div>
             <script type="text/javascript">
                 $(function() {
@@ -85,5 +92,6 @@
                     }
                 }
             </script>
-        </div>
         <?php osc_current_web_theme_path('footer.php') ; ?>
+		
+		

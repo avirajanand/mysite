@@ -167,6 +167,7 @@
                             <?php UserForm::country_select(osc_get_countries(), osc_user()); ?>
                         </div>
                         <div class="form-group">
+
                             <label class="control-label" for="region"><?php _e('City', 'paris'); ?> *</label>
                             <?php UserForm::region_select(osc_get_regions(), osc_user()); ?>
                         </div>
@@ -180,6 +181,7 @@
                         </div>
                         <div class="form-group">
                             <label for="address"><?php _e('Search name for google map', 'paris'); ?></label>
+
                             <?php ItemForm::address_text(osc_user()); ?>
                         </div>
                         
