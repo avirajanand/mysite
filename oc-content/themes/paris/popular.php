@@ -39,6 +39,7 @@
 			<a href="<?php echo osc_premium_url() ; ?>"><img class="group list-group-image" src="<?php echo osc_resource_thumbnail_url() ; ?>" title="<?php echo osc_premium_title(); ?>" alt="<?php echo osc_premium_title(); ?>" /></a><?php } else { ?><a href="<?php echo osc_premium_url() ; ?>">
             <img src="<?php echo osc_current_web_theme_url('images/no_photo.gif') ; ?>" alt="" title=""/></a>
         <?php } ?>
+		<div class="type"><?php echo osc_premium_category(); ?></div>
                 <div class="caption">
                     <h4 class="group inner list-group-item-heading">
                        <?php if( osc_price_enabled_at_items() ) { ?> <?php } ?><?php if( osc_price_enabled_at_items() ) { ?> <small><strong><?php echo osc_premium_formated_price() ; ?></strong></small><?php } ?><br></br><a href="<?php echo osc_premium_url() ; ?>"><?php echo osc_premium_title(); ?></a></h4>

@@ -18,104 +18,75 @@
      *      You should have received a copy of the GNU Affero General Public
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
+	 
 ?>
-        <?php osc_current_web_theme_path('header.php') ; ?>
-		
-        <div id="main">
-            <div id="">
-			<h2><?php _e("Which game do you wish to play today?", 'realestate');?></h2>
-                <div class="categories">
-                    <?php osc_goto_first_category() ; ?>
-                    <?php while ( osc_has_categories() ) { ?>
-                            <h2><a class="<?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>"><?php echo osc_category_name() ; ?></a></h2>
-                    <?php } ?>
-                    <div class="clear"></div>
-               </div>
-				<hr/>
-           <div id="premium-stage">
-                <?php if( osc_count_latest_items() == 0) { ?>
-                    <p class="empty"><?php _e('No Latest venues', 'realestate') ; ?></p>
-                <?php } else {
-                    $index = 0;
-                ?>
-                    <?php while ( osc_has_latest_items() ) {
-                        ?>
-                        <div class="ui-item">
-                            <div class="frame">
-                                <a href="<?php echo osc_item_url() ; ?>"><?php if( osc_images_enabled_at_items() ) { ?>
-                                    <?php if( osc_count_item_resources() ) { ?>
-                                        <img src="<?php echo osc_resource_preview_url() ; ?>" title="<?php echo osc_item_title(); ?>" alt="<?php echo osc_item_title(); ?>"/>
-                                    <?php } else { ?>
-                                        <img src="<?php echo osc_current_web_theme_url('images/no_photo.gif') ; ?>" alt="" title=""/>
-                                    <?php } ?>
-                                <?php } else { ?>
-                                    <img src="<?php echo osc_current_web_theme_url('images/no_photo.gif') ; ?>" alt="" title=""/>
-                                <?php } ?>
-                                <div class="type"><?php echo osc_item_category(); ?></div>
-                                <?php if( osc_price_enabled_at_items() ) { ?><div class="price"><?php echo osc_item_formated_price() ; ?></div> <?php } ?>
-                                </a>
-                            </div>
-							
-                            <div class="info" >
-								<div class = "prev" style="position:absolute;top:0;left:0; width:15px;">
-									<a style="color:grey;cursor:pointer" onclick="showPrev()">&lt </a>
-								</div>
-								<div style="padding-left: 15px; padding-right: 15px;">
-									<div>
-										<h3><a href="<?php echo osc_item_url() ; ?>"><?php if(strlen(osc_item_title()) > 70){ echo substr(osc_item_title(), 0, 70).'...'; } else { echo osc_item_title(); } ?></a></h3>
-									</div>
-									<div class="data"><?php item_realestate_attributes(); ?></div>
-									<div class="author">
-										<?php echo osc_item_city(); ?> (<?php echo osc_item_region();?>)<br/>
-										<?php echo osc_item_city_area(); ?><br />                        
-									</div>
-								</div>
-								<div class = "next" style="position:absolute;right:0;top:0">
-									<a style="color:grey;cursor:pointer" onclick="showNext()">&gt</a>
-								</div>
-                            </div>
-							
-                        </div>
-                    <?php
-                            $index++;
-                            if($index == 4){
-                                break; 
-                            }
-                        }
-                    ?>
-                <div class="clear"></div>
-                <?php View::newInstance()->_erase('items') ;
-                } ?>
-                <script type="text/javascript">
-                /* <![CDATA[ */
-                var slides = $("#premium-stage .ui-item:not(:last)").hide();
-                if(slides.length >= 1){
-                    slider = setInterval('showNext()',5000);
-                }
-                function showNext(){
-                    $("#premium-stage .ui-item:last").prev().fadeIn(500);
-                    $("#premium-stage .ui-item:last").fadeOut(500,function(){
-                        $(this).remove().prependTo('#premium-stage');
-                    });
-                }
-				function showPrev(){
-					$("#premium-stage .ui-item:last").fadeOut(500);
-                    $("#premium-stage .ui-item:first").fadeIn(500,function(){
-						$(this).remove().appendTo('#premium-stage');
-					});
-                }
+          <?php osc_current_web_theme_path('header.php') ; ?>  
+		  <!-- container -->
+<div class="container">
+<?php osc_show_widgets('header') ; ?>
+<div class="left-container">
                 
-                /* ]]> */
-                </script>
-            </div>
-        </div>
-        <div class="content home">
-            <h2><?php _e('Latest Venues', 'realestate') ; ?></h2>
-            <div id="latest-ads">               
+				
+				<div class="explore_categories">
+						<h2><?php _e("Explore Sports ", 'realestate');?></h2>
+		                    <?php osc_goto_first_category() ; ?>
+		                    <?php while ( osc_has_categories() ) { ?>
+		                            <h4><a class="<?php echo osc_category_slug() ; ?>" href="
+									<?php echo osc_search_category_url() ; ?>"><?php echo osc_category_name() ; ?></a></h4>
+		                    <?php } ?>
+		                    <div class="clear"></div>
+                </div>
+				
+				<?php osc_current_web_theme_path('bookslot.php') ; ?>  
+</div>		
+<div class="right-container">	
+				<div class="comment-container">
+						<h2><?php _e("Comment Section", 'realestate');?></h2>
+							<?php osc_goto_first_category() ; ?>
+									<h4><a class="<?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>">
+								</a></h4>
+									"I love football so much but i dont get any playground to play . Now i can search any playground in my city , book that ground in just one click and play there."</a></h4>
+									<h4><a class="<?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>">
+									<h4><a class="<?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>">
+									</a></h4>
+									<h4><a class="<?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>">
+									</a></h4>
+									<h4><a class="<?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>">
+									</a></h4>
+									<h4><a class="<?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>">
+									-Messi</a></h4>
+							<div class="clear"></div>
+			    </div>
+				
+				<div class="explore_location">
+						<h2><?php _e("Explore Location ", 'realestate');?></h2>
+							<?php osc_goto_first_category() ; ?>
+									<h4><a class="<?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>">
+									<?php echo osc_category_name() ; ?></a></h4>
+									<h4><a class="<?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>">
+									<?php echo osc_category_name() ; ?></a></h4>
+									<h4><a class="<?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>">
+									<?php echo osc_category_name() ; ?></a></h4>
+									<h4><a class="<?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>">
+									<?php echo osc_category_name() ; ?></a></h4>
+									<h4><a class="<?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>">
+									<?php echo osc_category_name() ; ?></a></h4>
+									<h4><a class="<?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>">
+									<?php echo osc_category_name() ; ?></a></h4>
+							<div class="clear"></div>
+			    </div>
+		   
+</div>				
+<div class="content home">
+        <?php osc_current_web_theme_path('slider.php') ; ?>    		
+        <div id="main">				   
+            <div id="latest-ads">    
+				<div class="latest-ads-text"><?php _e('Latest Listings', 'realestate') ; ?></div>					
+				</hr>
                 <?php if( osc_count_latest_items() == 0) { ?>
                     <p class="empty"><?php _e('No Latest Venues', 'realestate') ; ?></p>
                 <?php } else { ?>
-                    <?php while ( osc_has_latest_items() ) { ?>
+                    <?php $item_count=0; while ( osc_has_latest_items() ) { if($item_count < osc_max_latest_items()){ ?>
                         <div class="ui-item ui-item-list">
                             <div class="frame">
                                 <a href="<?php echo osc_item_url() ; ?>"><?php if( osc_images_enabled_at_items() ) { ?>
@@ -142,15 +113,19 @@
                                 </div>
                             </div>
                         </div>
-                    <?php } ?>
+                    <?php } $item_count++;} ?>
                 <div class="clear"></div>
                 <?php View::newInstance()->_erase('items') ;
                 } ?>
             </div>
             <?php if( osc_count_latest_items() == osc_max_latest_items() ) { ?>
                 <div class="pagination-box">
-                    <a href="<?php echo osc_search_show_all_url();?>" class="ui-button ui-button-grey"><?php _e("See all Venues", 'realestate'); ?> &raquo;</a></p>
+                    <a href="<?php echo osc_search_show_all_url();?>" class="ui_button ui-button-green">
+					<?php _e("See all Venues", 'realestate'); ?> &raquo;</a>
                 </div>
             <?php } ?>
         </div>
-        <?php osc_current_web_theme_path('footer.php') ; ?>
+</div>        
+
+		
+		<?php osc_current_web_theme_path('footer.php') ; ?>

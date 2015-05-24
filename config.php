@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The base MySQL settings of Osclass
  */
