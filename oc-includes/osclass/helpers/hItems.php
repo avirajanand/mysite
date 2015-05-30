@@ -298,7 +298,18 @@
         return $aCurrency['s_description'];
     }
 
-    /**
+  /**
+     * Gets seller contact name of current item
+     *
+     * @return string
+     */
+    function osc_seller_contact_number($id) {
+	    $item_id=osc_item_id("pk_i_id");
+		$value=Item::newInstance()->findMetaByPrimaryKey($id,1);
+        return (string) $value['s_value'];
+    }  
+
+  /**
      * Gets contact name of current item
      *
      * @return string

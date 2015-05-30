@@ -28,7 +28,7 @@
 		 background: rgba(24, 188, 156, .9);
 		 color: #ffffff;
 		 text-align:center;
-		 margin:-45px 0px 5px;
+		 margin:-10px 0px 5px;
 	}
 	.product-name{
 color:rgb(24, 188, 156);

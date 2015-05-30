@@ -96,7 +96,7 @@
 					<p><?php voting_item_detail(); ?></p>
 <div class="add-to-box">
 <!-- Small modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".bs-example-modal-sm"><i class="fa fa-shopping-cart"></i> <?php _e('Book Now', 'paris'); ?></button><?php osc_current_web_theme_path('common/'.osc_get_preference('wl-us', 'paris').'-watchlist.php') ; ?>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".bs-example-modal-sm"><i class="fa fa-book"></i> <?php _e('Book now', 'paris'); ?></button><?php osc_current_web_theme_path('common/'.osc_get_preference('wl-us', 'paris').'-watchlist.php') ; ?>
 </div>
 
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
@@ -116,8 +116,8 @@
 
 
 <div id="contact">
-                    <button type="button" class="btn btn-primary btn-lg btn-block"><strong><?php _e("Contact seller", 'paris'); ?></strong></button>
-
+                    <button type="button" class="btn btn-primary btn-lg btn-block"><strong><?php _e("Phone Booking", 'paris'); ?></strong></button>
+                    
                     <?php if( osc_item_is_expired () ) { ?>
                         <p>
                             <?php _e("The listing is expired. You can't contact the publisher.", 'paris'); ?>
@@ -139,9 +139,8 @@
                         <?php if( osc_item_user_id() != null ) { ?>
                                 
 <button type="button" class="btn btn-default btn-lg btn-block">
-                            <strong><p class="name"><?php _e('Name', 'paris') ?>: <a href="<?php echo osc_user_public_profile_url( osc_item_user_id() ); ?>" ><?php echo osc_item_contact_name(); ?></a></p></strong></button>
                         <?php } else { ?>
-                            <button type="button" class="btn btn-default btn-lg btn-block"><strong><p class="name"><?php _e('Name', 'paris') ?>: <?php echo osc_item_contact_name(); ?></p></strong></button>
+                            <button type="button" class="btn btn-default btn-lg btn-block"><strong><p class="name"><i class="fa fa-phone-square">   </i>   <?php echo osc_seller_contact_number(osc_item_id()); ?></p></strong></button>
                         <?php } ?>
                         <?php if( osc_item_show_email() ) { ?>
                             <button type="button" class="btn btn-default btn-lg btn-block"><strong><p class="email"><?php _e('E-mail', 'paris'); ?>: <?php echo osc_item_contact_email(); ?></p></strong></button>
@@ -163,6 +162,7 @@
                            <button type="button" class="btn btn-default btn-lg btn-block"><strong> <p class="region"><?php _e("Region", 'paris'); ?>: <?php echo osc_user_region(); ?></p></strong></button>
                         <?php } ?>
 
+						<button type="button" class="btn btn-default btn-lg btn-block"><strong> <p class="region"><?php _e("Online Booking Coming Soon ", 'paris'); ?><i class="fa fa-exclamation"></i><i class="fa fa-exclamation"></i></p></strong></button>
 
 
 
@@ -229,7 +229,7 @@
                                 <?php while ( osc_has_item_meta() ) { ?>
                                     <?php if(osc_item_meta_value()!='') { ?>
                                         <div class="meta">
-                                            <strong><?php echo osc_item_meta_name(); ?>:</strong> <?php echo osc_item_meta_value(); ?>
+                                            <strong><?php echo osc_item_meta_name(); ?> :</strong> <?php echo osc_item_meta_value(); ?>
                                         </div>
                                     <?php } ?>
                                 <?php } ?>
@@ -450,8 +450,8 @@ width: 100%;
                 </div>
                 <!-- plugins -->
                 
-                
-                <?php osc_current_web_theme_path('popular1.php'); ?>
+                <?php if(osc_get_preference('popular-dis', 'paris')=='yes'){
+                 osc_current_web_theme_path('popular1.php'); }?>
                 
             </div>
             <div id="sidebar" class="col-md-2">

@@ -81,7 +81,7 @@
 
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  <?php _e("Contact", 'paris'); ?> <?php echo osc_user_name(); ?>
+  <?php _e("Contact", 'paris'); ?> <?php echo osc_user_first_name(); ?>
 </button>
 
 <!-- Modal -->

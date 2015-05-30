@@ -82,8 +82,8 @@
 .cat-label {
 background-color: #EB2727;
 color: #fff;
-top: 10px;
-right: 25px;
+top: -5px;
+right: 8px;
 font: inherit;
 font-size: 10px;
 padding: 8px;

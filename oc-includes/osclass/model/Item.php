@@ -928,6 +928,36 @@
             }
             return $array;
         }
+		
+		
+		/**
+         * Get the meta result match of the item primary key passed by parameter
+         *
+         * @access public
+         * @since unknown
+         * @param int $id Item id
+         * @return array
+         */
+        public function findMetaByPrimaryKey($id,$f_id)
+        {
+            $this->dao->select('im.s_value as s_value');
+            $this->dao->from(DB_TABLE_PREFIX.'t_item_meta im');
+            $array_where = array(
+                'im.fk_i_item_id'       => $id,
+                'im.fk_i_field_id'       => $f_id
+            );
+            $this->dao->where($array_where);
+            $result = $this->dao->get();
+            if($result == false) {
+                return array();
+            }
+            $value = $result->row();
+
+            // prepare data - date interval - from <-> to
+            //print_r($value['s_value']);
+			return $value;
+            
+        }
 
         /**
          * Delete by primary key, delete dependencies too

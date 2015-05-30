@@ -193,7 +193,13 @@
 							<span class="counter-search"><b><?php
                 $search_number = paris_search_number();
                 printf(__('%1$d - %2$d of %3$d listings', 'paris'), $search_number['from'], $search_number['to'], $search_number['of']);
-            ?></b></span>
+            ?></b>
+			<div class="paginate_top" >
+              <?php echo osc_search_pagination(); ?>
+            </div>
+			
+			</span>
+			
 							 <div class="btn-group btn-sm pull-right">
 								<a title="Show As Galery" style="font-size: 1.5em;" class="btn btn-primary btn-sm " href="<?php echo osc_update_search_url(array('sShowAs'=> 'gallery')); ?>"><span class="fa fa-th" aria-hidden="true"></span></a>
 <a title="Show As List" style="font-size: 1.5em;" class="btn btn-primary btn-sm " href="<?php echo osc_update_search_url(array('sShowAs'=> 'list')); ?>"><span class="fa fa-th-list" aria-hidden="true"></span></a>

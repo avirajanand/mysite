@@ -4,6 +4,11 @@
  */
 
 /** Front end editor */
+.thumbnail a > img{
+height:161px !important;
+width:100%;
+}
+
 .thumbnail > img,
 .thumbnail a > img,
 .carousel-inner > .item > img,

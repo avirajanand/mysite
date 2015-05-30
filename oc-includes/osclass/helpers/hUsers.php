@@ -242,7 +242,18 @@
     function osc_logged_admin_email() {
         return (string) Session::newInstance()->_get('adminEmail');
     }
-
+	
+		/**
+     * Gets logged user first name
+     *
+     * @return string
+     */
+    function osc_user_first_name() {
+	      $user_name=osc_user_name();
+		  
+        return (string) strtok($user_name, " ");
+    }
+	
     /**
      * Gets name of current user
      *

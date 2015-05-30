@@ -70,7 +70,7 @@ line-height: 1;
 .carousel-control .icon-prev, 
 .carousel-control .icon-next {
 	position: absolute;
-	top: 40%;
+	top: 36%;
 	z-index: 5;
 	display: inline-block;
 }
