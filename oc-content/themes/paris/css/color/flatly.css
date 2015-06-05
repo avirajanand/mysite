@@ -1579,7 +1579,7 @@ pre code {
 }
 @media (min-width: 992px) {
   .container {
-    width: 70%;
+    width: 75%;
   }
 }
 @media (min-width: 1200px) {
@@ -3926,12 +3926,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a > img {
   max-width: none;
 }
-
+.breadcrumb_wrapper{
+margin-top:15px;
+}
 #account_dropdown{
 margin-top:13px;
 }
 #location_glyph{
 margin-top:6px;
+}
+
+#fb_like_top{
+  margin: 18px 15px 0px;
 }
 
 #profile_link img{
@@ -3943,14 +3949,13 @@ margin-top:6px;
 
 #profile_link a:hover,#profile_link img :hover,
 #profile_link a:hover,#profile_link img:focus {
-  background-color: #18bc9c;
-  color: #ffffff;
+  color: #18bc9c;
 }
 #profile_link a{
-height:auto;
-text-transform: capitalize;
-padding: 10px 0px 10px 10px;
-margin: 3px -5px 0px;
+  height: auto;
+  text-transform: capitalize;
+  /* padding: 10px 0px 0px 12px; */
+  margin: -3px -25px 10px -3px;;
 }
 
 #profile-link{

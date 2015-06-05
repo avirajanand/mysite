@@ -116,7 +116,6 @@
 
 
 <div id="contact">
-                    <button type="button" class="btn btn-primary btn-lg btn-block"><strong><?php _e("Phone Booking", 'paris'); ?></strong></button>
                     
                     <?php if( osc_item_is_expired () ) { ?>
                         <p>
@@ -139,8 +138,9 @@
                         <?php if( osc_item_user_id() != null ) { ?>
                                 
 <button type="button" class="btn btn-default btn-lg btn-block">
+                            <strong><p class="name"><i class="fa fa-phone-square"> </i> +(91)- <?php echo osc_seller_contact_number(osc_item_id()); ?></p></strong></button>
                         <?php } else { ?>
-                            <button type="button" class="btn btn-default btn-lg btn-block"><strong><p class="name"><i class="fa fa-phone-square">   </i>   <?php echo osc_seller_contact_number(osc_item_id()); ?></p></strong></button>
+                            <button type="button" class="btn btn-default btn-lg btn-block"><strong><p class="name"><i class="fa fa-phone-square">   </i>  +(91)- <?php echo osc_seller_contact_number(osc_item_id()); ?></p></strong></button>
                         <?php } ?>
                         <?php if( osc_item_show_email() ) { ?>
                             <button type="button" class="btn btn-default btn-lg btn-block"><strong><p class="email"><?php _e('E-mail', 'paris'); ?>: <?php echo osc_item_contact_email(); ?></p></strong></button>

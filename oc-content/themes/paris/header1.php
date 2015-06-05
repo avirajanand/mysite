@@ -20,13 +20,34 @@
      */
 ?>
  <!-- header --> 
+ <style>
+.type{
+		 width: 100%;
+		 height: 25px;
+		 position: relative;
+		 background: rgba(24, 188, 156, .9);
+		 color: #ffffff;
+		 text-align:center;
+		 margin:-10px 0px 5px;
+	}
+	.product-name{
+color:rgb(24, 188, 156);
+}
+</style>
         <div class="wrapper">
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid container">
     <!-- Brand and toggle get grouped for better mobile display -->
+	<div class="col-md-6 col-xs-6" id="header_logo">
+            <div class="logo">
+                    <a href="<?php echo osc_base_url(); ?>" alt="<?php echo osc_page_title() ; ?>" title="<?php echo osc_page_title() ; ?>">
+                       <?php echo logo_header(); ?>
+                    </a>
+            </div>
+	</div>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
+        <span class="sr-only"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -37,20 +58,22 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
- <ul class="nav navbar-nav">
-        <li><a href="<?php echo osc_base_url() ; ?>"><span class="fa fa-home" aria-hidden="true"></span> <?php _e('Home', 'paris') ; ?></a></li>
-       
-         <li><a href="<?php echo osc_contact_url(); ?>"><?php _e('Contact', 'paris'); ?></a></li>
-        <?php osc_reset_static_pages(); ?>
-        <?php while( osc_has_static_pages() ) { ?>
-            <li><a href="<?php echo osc_static_page_url(); ?>"><?php echo osc_static_page_title(); ?></a></li>
-        <?php } ?>
-      </ul>
-      
-      <ul class="nav navbar-nav navbar-right">
+    <ul class="nav navbar-nav">
+	  <?php osc_current_web_theme_path('inc.search.php'); ?>
+	</ul>
+    
+    <ul class="nav navbar-nav navbar-right">
 
 <!-- Region -->
-
+<li id="fb_like_top">
+	<div class="fb-like" data-href="https://www.facebook.com/PlayTangCommunity" data-width="100px" data-layout="button" data-action="like"     data-show-faces="false" data-share="false"></div>
+</li>
+<li>
+    <a href="item/new">
+	    <?php _e("Add Venue", 'paris'); ?><span class="fa fa-plus-square" aria-hidden="true" style="padding-left: 3px;"></span>
+	</a>
+     					    
+</li>
 <li><a data-toggle="modal" data-target=".bs-example-modal-lg" href="#"><?php _e('Location', 'paris') ; ?> <span title="<?php _e('Location', 'paris') ; ?>" class="fa fa-map-marker" aria-hidden="true"></span></a></li>
 
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -72,7 +95,7 @@
 <?php if(osc_users_enabled()) { ?>
                         <?php if( osc_is_web_user_logged_in() ) { ?>
                             <li></li>
-                            <li><a href="<?php echo osc_user_dashboard_url() ; ?>"> <?php echo sprintf(__('Hi %s', 'paris'), osc_logged_user_first_name() . '!'); ?></a></li>
+                            <li id="profile_link"><a href="<?php echo osc_user_dashboard_url() ; ?>"> <?php echo sprintf(__('%s', 'paris'), osc_logged_user_first_name()); ?><img src="<?php echo get_profile_image(30)?>"/></a></li>
 <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?php _e('My account', 'paris') ; ?><span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -87,23 +110,12 @@
             <li><a href="<?php echo osc_user_logout_url() ; ?>"><span class="fa fa-sign-out" aria-hidden="true"></span> <?php _e('Logout', 'paris') ; ?></a></li>
           </ul>
         </li>
-                            <li><a href="<?php echo osc_user_logout_url() ; ?>"><span title="<?php _e('Logout', 'paris') ; ?>" class="fa fa-sign-out" aria-hidden="true"></span></a></li>
                         <?php } else { ?>
                             
                         <?php if(osc_user_registration_enabled()) { ?>
 
 <?php if ( osc_count_web_enabled_locales() > 1) { ?>
-                <?php osc_goto_first_locale(); ?>
-                <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?php _e('Language', 'paris') ; ?> <span title="Language" class="fa fa-language" aria-hidden="true"></span><span class="caret"></span></a>
-                    
-                    <ul class="dropdown-menu" role="menu">
-                        <?php $i = 0;  ?>
-                        <?php while ( osc_has_web_enabled_locales() ) { ?>
-                            <li <?php if( $i == 0 ) { echo "class='first'"; } ?>><a id="<?php echo osc_locale_code(); ?>" href="<?php echo osc_change_language_url ( osc_locale_code() ); ?>"><?php echo osc_locale_name(); ?></a></li>
-                            <?php $i++; ?>
-                        <?php } ?>
-                    </ul>
-                </li>
+                                
             <?php } ?>
 
 
@@ -151,43 +163,8 @@
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
-</nav>         
-<div class="container">
-            <div class="col-md-4 col-xs-6">
-            <div class="logo">
-                
-                    <a href="<?php echo osc_base_url(); ?>" alt="<?php echo osc_page_title() ; ?>" title="<?php echo osc_page_title() ; ?>">
-    <?php echo logo_header(); ?>
-    </a>
+</nav>
 
-               
-            </div></div>
-
-<div class="col-md-4 col-xs-6">
-<form action="<?php echo osc_base_url(true); ?>" method="get" role="search" onsubmit="javascript:return doSearch();">
-<fieldset>
-<div class="input-group ulfa">
-<input type="hidden" name="page" value="search" />
-<input type="text" name="sPattern"  class="form-control" placeholder="<?php echo osc_esc_html( osc_get_preference('keyword_placeholder', 'paris') ); ?>" value=""/>
-      
-      <span class="input-group-btn">
-        <button type="submit" class="btn btn-default" type="button"><i class="fa fa-search"></i> <?php _e('Search', 'paris'); ?></button>
-      </span>
-    </div>
-    </fieldset>
-</form>
-</div>
-<!--
-<div class="col-md-4 col-xs-6">
-<p class="kanan ulfa">
-  
-  <button type="button" onclick="parent.location='<?php echo osc_item_post_url_in_category() ; ?>'" class="btn btn-primary btn-medium"><span class="fa fa-plus" aria-hidden="true"></span> <?php _e("Publish your ad for free", 'paris'); ?></a></button>
-  
-</p>
-</div>
--->
-
-</div>
             <div class="breadcrumb_wrapper"><div class="container" style="z-index: 5;">
                 <div class="navbar navbar-default">
                     <div class="container-fluid">
@@ -206,7 +183,7 @@
                             <ul class="nav navbar-nav">
                                 <?php while ( osc_has_categories() ) { ?>
                                 <li class="dropdown <?php echo osc_category_slug() ; ?><?php if ( osc_count_subcategories() > 0 ) { ?> menu<?php } ?>">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" href="<?php echo osc_search_category_url() ; ?>" <?php if ( osc_count_subcategories() > 0 ) { ?>class="menu"<?php } ?>><?php View::newInstance()->_erase('subcategories'); echo osc_category_name() ; ?><span class="caret"></span></a>
+                                    <a class="dropdown-toggle" role="button" aria-expanded="false" href="<?php echo osc_search_category_url() ; ?>" <?php if ( osc_count_subcategories() > 0 ) { ?>class="menu"<?php } ?>><?php View::newInstance()->_erase('subcategories'); echo osc_category_name() ; ?></a>
                                     <?php if ( osc_count_subcategories() > 0 ) { ?>
                                     <ul class="dropdown-menu" role="menu">
                                         <?php while ( osc_has_subcategories() ) { ?>
