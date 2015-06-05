@@ -116,6 +116,7 @@
 
 
 <div id="contact">
+                    <button type="button" class="btn btn-primary btn-lg btn-block"><strong><?php _e("Call and book", 'paris'); ?></strong></button>
                     
                     <?php if( osc_item_is_expired () ) { ?>
                         <p>
