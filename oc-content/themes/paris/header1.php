@@ -216,6 +216,12 @@ color:rgb(24, 188, 156);
 <?php
     }
 ?>
+<span class="st_twitter_large" displayText="Tweet"></span>
+<span class="st_facebook_large" displayText="Facebook"></span>
+<span class="st_ybuzz_large" displayText="Yahoo! Buzz"></span>
+<span class="st_gbuzz_large" displayText="Google Buzz"></span>
+<span class="st_email_large" displayText="Email"></span>
+<span class="st_sharethis_large" displayText="ShareThis"></span>
 <div class="forcemessages-inline container">
     <?php osc_show_flash_message(); ?>
 </div>

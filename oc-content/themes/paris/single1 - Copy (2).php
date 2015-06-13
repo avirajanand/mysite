@@ -247,7 +247,7 @@ margin: 0 .9rem;
 							<span class="oc-share-count">0</span>
 						  </a>
 						  
-						  <a id="oc-twitter-share" class="btn twitter-share-button" data-network="twitter" data-ga-action="twitter_share">
+						  <a id="oc-twitter-share" class="oc-share_link btn" data-network="twitter" data-ga-action="twitter_share">
 							<i class="fa fa-twitter fa-lg"></i>
 							<span class="separator"></span>
 							<span class="oc-share-count">0</span>
@@ -260,9 +260,10 @@ margin: 0 .9rem;
 						  </a>
                      </div>
                 </div>
-</div>
+
 <div class="addthis_responsive_sharing"></div>				
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5573e48d5727511b" async="async"></script>
+
 
 </div>
 </div>

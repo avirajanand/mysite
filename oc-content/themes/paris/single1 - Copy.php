@@ -198,71 +198,17 @@
                     <?php if ( osc_item_country() != "" ) { ?><?php /*_e("Country", 'paris');*/ ?>, <strong><?php echo osc_item_country(); ?></strong></li> <?php } ?>        
 </ul>
 
-				<div id="type_dates">
-				                   
-				</div>
-<style>
-
-#oc-linkedin-share,#oc-facebook-share,
-#oc-twitter-share,#oc-google-share{
-margin:0px 2px 0px;
-border-color: #006292;
-color:white;
-padding: 5px 8px 8px;
-border-radius: 4px;
-}
-#oc-linkedin-share{
-background-color: #007BB6;
-border-color: #006292;
-}
-#oc-facebook-share{
-background-color: #3D5E99;
-border-color: #314b7a;
-}
-#oc-twitter-share{
-background-color: #2CAFF0;
-border-color: #0f93d4;
-}
-#oc-google-share{
-background-color: #B81414;
-border-color: #a30000;
-}
-.separator{
-border-left: 1px solid rgba(255,255,255,.4);
-margin: 0 .9rem;
-}
-</style>
-                <div class="share ulfa"><!-- AddThis Button BEGIN -->
-                     <div class="social-share-container add-padding-right">
-						  <a id="oc-facebook-share" class="oc-share_link btn fb-share-button" data-network="facebook"  
-           					 data-layout="link" data-href="<?php echo osc_item_url(); ?>" data-ga-action="facebook_share">   
-							<i class="fa fa-facebook fa-lg"></i>
-							<span class="separator"></span>
-							<span class="oc-share-count">0</span>
-						  </a>
-
-						  <a id="oc-google-share" class="oc-share_link btn" data-network="google" data-ga-action="gplusone_share">
-							<i class="fa fa-google-plus fa-lg"></i>
-							<span class="separator"></span>
-							<span class="oc-share-count">0</span>
-						  </a>
-						  
-						  <a id="oc-twitter-share" class="btn twitter-share-button" data-network="twitter" data-ga-action="twitter_share">
-							<i class="fa fa-twitter fa-lg"></i>
-							<span class="separator"></span>
-							<span class="oc-share-count">0</span>
-						  </a>
-						  
-						  <a id="oc-linkedin-share" class="oc-share_link btn" data-network="linkedin" data-ga-action="linkedin_share">
-							<i class="fa fa-linkedin fa-lg"></i>
-							<span class="separator"></span>
-							<span class="oc-share-count">0</span>
-						  </a>
-                     </div>
-                </div>
+<div id="type_dates">
+                   
 </div>
-<div class="addthis_responsive_sharing"></div>				
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5573e48d5727511b" async="async"></script>
+
+<div class="share ulfa"><!-- AddThis Button BEGIN -->
+          <div class="addthis_default_style"><a class="addthis_button_compact at300m" href="#"><span class="at4-icon aticon-compact" style="background-color: rgb(252, 109, 76);"><span class="at_a11y">More Sharing Services</span></span>Share</a> <a class="addthis_button_email at300b" target="_blank" title="Email" href="#" tabindex="1000"><span class="at4-icon aticon-email" style="background-color: rgb(115, 138, 141);"><span class="at_a11y">Share on email</span></span></a><a class="addthis_button_print at300b" title="Print" href="#"><span class="at4-icon aticon-print" style="background-color: rgb(115, 138, 141);"><span class="at_a11y">Share on print</span></span></a> <a class="addthis_button_facebook at300b" title="Facebook" href="#"><span class="at4-icon aticon-facebook" style="background-color: rgb(48, 88, 145);"><span class="at_a11y">Share on facebook</span></span></a> <a class="addthis_button_twitter at300b" title="Tweet" href="#"><span class="at4-icon aticon-twitter" style="background-color: rgb(44, 168, 210);"><span class="at_a11y">Share on twitter</span></span></a></div>
+          <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js"></script> 
+          <!-- AddThis Button END --> 
+        </div>
+
+                </div>
 
 </div>
 </div>

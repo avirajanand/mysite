@@ -25,6 +25,7 @@
 <meta name="title" content="<?php echo osc_esc_html(meta_title()); ?>" />
 <?php if( meta_description() != '' ) { ?>
 <meta name="description" content="<?php echo osc_esc_html(meta_description()); ?>" />
+<meta name="og:description" content="<?php echo osc_esc_html(meta_description()); ?>" />
 <?php } ?>
 <?php if( function_exists('meta_keywords') ) { ?>
 <?php if( meta_keywords() != '' ) { ?>
@@ -36,7 +37,6 @@
 <?php } ?>
 <meta content="index, follow" name="robots">
 <meta content="<?php echo osc_esc_html( osc_get_preference('seo-sitename', 'paris') ); ?>" property="og:site_name">
-<meta content="<?php echo osc_esc_html( osc_get_preference('seo-description', 'paris') ); ?>" name="og:description">
 <meta content="<?php echo osc_esc_html( osc_get_preference('seo-google', 'paris') ); ?>" name="google-site-verification">
 <meta content="<?php echo osc_esc_html( osc_get_preference('seo-bing', 'paris') ); ?>" name="msvalidate.01">
 <meta content="<?php echo osc_esc_html( osc_get_preference('seo-alexa', 'paris') ); ?>" name="alexaVerifyID">
@@ -68,15 +68,39 @@
 <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
+
+<script>
+window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '829202540466914',
+          xfbml      : true,
+          version    : 'v2.3'
+        });
+      };
+	  
+(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+<!--
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "f340b011-0ed0-4008-8f14-e3e19a6d658b", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
 
+<script charset="utf-8" type="text/javascript">
+var h_options={"publisher":"f340b011-0ed0-4008-8f14-e3e19a6d658b","position":"left","chicklets_params":{"twitter":{"st_via":""},"instagram":{"st_username":""}},"chicklets":{"items":["twitter","facebook","googleplus","linkedin","sharethis"]}};var st_hover_widget = new sharethis.widgets.hoverbuttons(h_options);
+</script>
+<style type='text/css'>
+#sthoverbuttons #sthoverbuttonsMain, .stMainServices {
+						-webkit-box-sizing: content-box !important;
+						-moz-box-sizing:    content-box !important;
+						box-sizing:         content-box !important;
+					}
+</style>-->
 <script type="text/javascript">
     var fileDefaultText = '<?php echo osc_esc_js( __('No file selected', 'paris') ); ?>';
     var fileBtnText     = '<?php echo osc_esc_js( __('Choose File', 'paris') ); ?>';
