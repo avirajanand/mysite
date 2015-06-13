@@ -27,7 +27,7 @@ Plugin update URI: facebook-connect
 
     function fbc_button() {
         if( !osc_is_web_user_logged_in() ) {
-            echo '<div><a href="' . OSCFacebook::newInstance()->loginUrl() . '">' . __( 'Login with Facebook', 'facebook' ) . '</a></div>';
+            echo '<div><a class="btn" href="' . OSCFacebook::newInstance()->loginUrl() . '">' . __( 'Login with Facebook', 'facebook' ) . '</a></div>';
         }
     }
 
